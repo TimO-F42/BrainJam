@@ -2,12 +2,15 @@
 
 using System;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class Planet : BaseObject
 {
-    private void Start()
+    public float _rotateSpeed;
+    private Quaternion _targetQuaternion;
+    protected override void Start()
     {
-        speed = 2.0f;
+        base.Start();
         _direction = Vector3.back;
     }
 
@@ -15,5 +18,17 @@ public class Planet : BaseObject
     {
         base.Update();
         
+        
+        
+        
+        
+        //DAY/NIGHT for planets
+        /*if (Tick())
+        {
+            Quaternion myRotation = transform.localRotation;
+            _targetQuaternion = new Quaternion(myRotation.x, myRotation.y + _rotateSpeed + Time.deltaTime, myRotation.z, myRotation.w);
+        }
+
+        transform.localRotation = Quaternion.Lerp(transform.localRotation, _targetQuaternion, Time.deltaTime * _period);*/
     }
 }
