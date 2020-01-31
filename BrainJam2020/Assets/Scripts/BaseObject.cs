@@ -29,6 +29,7 @@ public class BaseObject : MonoBehaviour, IDilatable
     
     public virtual void Update()
     {
+        if (!_player) return;
         //_period = _maxPeriod - _player._speed;
         _lerpSpeed = _player._normalizedSpeed;
         _period = 1 - _player._normalizedSpeed;
