@@ -3,6 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public static class PlayerPhysics
+{
+    public static float mass = 100.0f;
+}
+
 public class Player : MonoBehaviour
 {
     private Vector3 _previousPosition;
@@ -11,6 +16,8 @@ public class Player : MonoBehaviour
     public float _speed;
     [HideInInspector]
     public float _normalizedSpeed;
+
+    public float mass;
 
     private void Start()
     {
