@@ -5,7 +5,8 @@ using UnityEngine;
 
 public static class PlayerPhysics
 {
-    public static float mass = 100.0f;
+    public static float mass = 10.0f;
+    public static float gravConstVal = 30;
 }
 
 public class Player : MonoBehaviour
@@ -19,8 +20,28 @@ public class Player : MonoBehaviour
 
     public float mass;
 
+    public Camera _playerCamera;
+
+    public Rigidbody _rigidbody;
+    
+    private Planet[] _planets;
+
+
     private void Start()
     {
+        FindObjectOfType<CameraHandler>()._launchCamera = _playerCamera;
+        _rigidbody = GetComponent<Rigidbody>();
+        _planets = FindObjectsOfType<Planet>();
+    }
+    
+    
+
+    private void FixedUpdate()
+    {
+        for (int i = 0; i < _planets.Length; i++)
+        {
+            _rigidbody.AddForce(_planets[i].PlanetForce(transform.position));
+        }
         
     }
 

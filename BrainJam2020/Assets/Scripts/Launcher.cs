@@ -8,6 +8,12 @@ public class Launcher : MonoBehaviour
     public Transform _launchPosition;
     public float speed = 5.0f;
     
+    public Game _game;
+    private GameObject player;
+
+    public float thrust;
+    
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -16,13 +22,26 @@ public class Launcher : MonoBehaviour
 
     void SpawnPlayer()
     {
-        GameObject player = Instantiate(_playerObject, _launchPosition.position, Quaternion.identity);
+        player = Instantiate(_playerObject, _launchPosition.position, Quaternion.identity);
         player.transform.SetParent(this.transform);
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(-Input.GetAxis ("Vertical") * speed, -Input.GetAxis ("Horizontal") * speed, 0.0f);
+        if (_game._viewState == Game.ViewState.LAUNCH)
+        {
+            transform.Rotate(-Input.GetAxis ("Vertical") * speed, -Input.GetAxis ("Horizontal") * speed, 0.0f);
+        }
+        
+    }
+
+    public void LaunchPlayer()
+    {
+        Rigidbody rb = player.GetComponent<Rigidbody>();
+
+        Vector3 forwardThrust = player.transform.forward * thrust;
+        
+        rb.AddForce(forwardThrust.x,forwardThrust.y, forwardThrust.z, ForceMode.Impulse);
     }
 }

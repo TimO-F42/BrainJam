@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public struct PanelInfo
 {
@@ -12,6 +13,12 @@ public struct PanelInfo
     public TMP_InputField _planetMass;
     public TMP_InputField _planetRadius;
     public TMP_Text _gravityForceText;
+
+    public void Finalise()
+    {
+        _planet.SetPlanetMass(float.Parse(_planetMass.text));
+        _planet.SetPlanetRadius(float.Parse(_planetRadius.text));
+    }
 }
 
 public class SystemInputSetup : MonoBehaviour
@@ -92,9 +99,8 @@ public class SystemInputSetup : MonoBehaviour
         {
             if (planetMass == 0) return 0;
         
-            float gravConstVal = 30;
             float distance = force.magnitude;
-            float strength = (gravConstVal * planetMass * PlayerPhysics.mass) / (distance * distance);
+            float strength = (PlayerPhysics.gravConstVal * planetMass * PlayerPhysics.mass) / (distance * distance);
             force.Normalize();
             force = force * strength;
             return strength;
@@ -104,18 +110,13 @@ public class SystemInputSetup : MonoBehaviour
             return 0;
         }
     }
-    
-    private Vector3 CalculatePlanetStrength(PanelInfo panel)
+
+    public void SetFinalPlanetValues()
     {
-        Vector3 force = Vector3.one * panel._planet.GetPlanetRadius();
-        
-        float massVal = 20;
-        float gravConstVal = 30;
-        float distance = force.magnitude;
-        float strength = (gravConstVal * massVal * PlayerPhysics.mass) / (distance * distance);
-        force.Normalize();
-        force = force * strength;
-        return force;
+        foreach (PanelInfo panel in _panels)
+        {
+            panel.Finalise();
+        }
     }
 
     private TMP_InputField GetInputField(Transform ui, string objectName)

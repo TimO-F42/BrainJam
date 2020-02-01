@@ -11,10 +11,14 @@ public class Planet : BaseObject
     [SerializeField]
     [Range(1,40)]
     private float _radius;
+    private float _mass;
+    private Rigidbody _rigidbody;
+    
     protected override void Start()
     {
         base.Start();
         _direction = Vector3.back;
+        _rigidbody = GetComponent<Rigidbody>();
     }
 
     public float GetPlanetRadius()
@@ -25,6 +29,22 @@ public class Planet : BaseObject
     public void SetPlanetRadius(float radius)
     {
         _radius = radius;
+    }
+
+    public void SetPlanetMass(float mass)
+    {
+        _mass = mass;
+        _rigidbody.mass = mass;
+    }
+    public Vector3 PlanetForce(Vector3 playerPosition)
+    {
+        Vector3 force = transform.position - playerPosition;
+        float distance = force.magnitude;
+        
+        float strength = (PlayerPhysics.gravConstVal * _mass * PlayerPhysics.mass) / (distance * distance);
+        force.Normalize();
+        force = force * strength;
+        return force;
     }
     
     
