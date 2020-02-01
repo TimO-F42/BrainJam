@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: New Material
-  m_Shader: {fileID: -6465566751694194690, guid: b90e5fd4dde319541a73eaef04a2eb64,
+  m_Name: Title
+  m_Shader: {fileID: -6465566751694194690, guid: 09d719a70c8a3414ea4cb4dacfeae42e,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -48,12 +48,21 @@ Material:
         m_Texture: {fileID: 2800000, guid: c059b7cedea97984c9f841fa1656d196, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_6CAE944C_Texture_1:
+        m_Texture: {fileID: 2800000, guid: c059b7cedea97984c9f841fa1656d196, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_86B0F5A6_Texture_1:
+        m_Texture: {fileID: 2800000, guid: c059b7cedea97984c9f841fa1656d196, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Boolean_AABBBBC6: 0
+    - Vector1_8F9F4FE0: 0.73
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1

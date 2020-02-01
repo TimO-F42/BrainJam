@@ -7,8 +7,9 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: CustomSkybox
-  m_Shader: {fileID: 10755, guid: 0000000000000000f000000000000000, type: 0}
+  m_Name: Stars
+  m_Shader: {fileID: -6465566751694194690, guid: 59004b77ad812b64abaf54cfce1c6b71,
+    type: 3}
   m_ShaderKeywords: _METALLIC_SETUP _SUNDISK_HIGH_QUALITY
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -55,11 +56,30 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_329D3B7B_Texture_1:
+        m_Texture: {fileID: 2800000, guid: c059b7cedea97984c9f841fa1656d196, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_7481A36F_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 1ec497e750551034ea64f2a76c2dec69, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_F6A75252_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 1ec497e750551034ea64f2a76c2dec69, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Triplanar_7DA8C70A_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 1ec497e750551034ea64f2a76c2dec69, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_3494E25D: 1.17
+    - Vector1_65DAC2D3: -3.8
+    - Vector1_C6BB21B9: 2118.15
     - _AtmosphereThickness: 0.53
     - _BumpScale: 1
     - _Cutoff: 0.5
@@ -83,7 +103,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.049220726, g: 0.019223925, b: 0.12156863, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _GroundColor: {r: 0.6392157, g: 0.6901961, b: 0.7411765, a: 1}
     - _SkyTint: {r: 1, g: 1, b: 1, a: 1}
