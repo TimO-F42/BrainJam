@@ -39,6 +39,7 @@ public class Launcher : MonoBehaviour
     public void LaunchPlayer()
     {
         Rigidbody rb = player.GetComponent<Rigidbody>();
+        player.GetComponent<Player>()._launched = true;
 
         Vector3 forwardThrust = player.transform.forward * thrust;
         

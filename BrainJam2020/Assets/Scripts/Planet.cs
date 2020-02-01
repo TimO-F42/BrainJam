@@ -13,6 +13,7 @@ public class Planet : BaseObject
     private float _radius;
     private float _mass;
     private Rigidbody _rigidbody;
+    public bool _isTargetPlanet;
     
     protected override void Start()
     {
@@ -26,17 +27,17 @@ public class Planet : BaseObject
         return _radius;
     }
 
-    public void SetPlanetRadius(float radius)
+    public virtual void SetPlanetRadius(float radius)
     {
         _radius = radius;
     }
 
-    public void SetPlanetMass(float mass)
+    public virtual void SetPlanetMass(float mass)
     {
         _mass = mass;
         _rigidbody.mass = mass;
     }
-    public Vector3 PlanetForce(Vector3 playerPosition)
+    public virtual Vector3 PlanetForce(Vector3 playerPosition)
     {
         Vector3 force = transform.position - playerPosition;
         float distance = force.magnitude;

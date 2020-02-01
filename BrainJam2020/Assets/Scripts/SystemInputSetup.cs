@@ -39,6 +39,8 @@ public class SystemInputSetup : MonoBehaviour
         _planets = FindObjectsOfType<Planet>();
         for (int i = 0; i < _planets.Length; i++)
         {
+            if (_planets[i]._isTargetPlanet) continue;
+            
             GameObject ui = Instantiate(_planetUITemplate, Vector3.zero, Quaternion.identity);
             PanelInfo panel;
             panel._planet = _planets[i];

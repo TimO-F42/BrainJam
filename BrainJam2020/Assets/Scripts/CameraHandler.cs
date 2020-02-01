@@ -10,6 +10,8 @@ public class CameraHandler : MonoBehaviour
     
     public Camera _launchCamera;
     public GameObject _launchCanvas;
+
+    public GameObject _levelCompleteCanvas;
     
     void Start()
     {
@@ -30,6 +32,7 @@ public class CameraHandler : MonoBehaviour
         _godCamera.gameObject.SetActive(false);
         _launchCanvas.SetActive(true);
         _godCanvas.SetActive(false);
+        _levelCompleteCanvas.SetActive(false);
         _game._viewState = Game.ViewState.LAUNCH;
     }
 
@@ -39,6 +42,14 @@ public class CameraHandler : MonoBehaviour
         _godCamera.gameObject.SetActive(true);
         _godCanvas.SetActive(true);
         _launchCanvas.SetActive(false);
+        _levelCompleteCanvas.SetActive(false);
         _game._viewState = Game.ViewState.GOD;
+    }
+
+    public void LevelCompleteView()
+    {
+        _levelCompleteCanvas.SetActive(true);
+        _launchCanvas.SetActive(false);
+        _godCanvas.SetActive(false);
     }
 }

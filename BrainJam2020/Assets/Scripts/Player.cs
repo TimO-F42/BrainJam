@@ -26,6 +26,7 @@ public class Player : MonoBehaviour
     
     private Planet[] _planets;
 
+    public bool _launched;
 
     private void Start()
     {
@@ -38,10 +39,14 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        for (int i = 0; i < _planets.Length; i++)
+        if (_launched)
         {
-            _rigidbody.AddForce(_planets[i].PlanetForce(transform.position));
+            for (int i = 0; i < _planets.Length; i++)
+            {
+                _rigidbody.AddForce(_planets[i].PlanetForce(transform.position));
+            }
         }
+        
         
     }
 
