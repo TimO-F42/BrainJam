@@ -6,6 +6,9 @@
     <e p="C:\Users\Dev_Laptop_11\Desktop\BrainJam\BrainJam\BrainJam2020" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="GodCamera.cs" t="Include" />
+        <e p="GodCameraFollow.cs" t="Include" />
+        <e p="PlanetSelector.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="BaseObject.cs" t="Include" />
           <e p="CameraHandler.cs" t="Include" />
