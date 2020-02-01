@@ -12,6 +12,7 @@ public class CameraHandler : MonoBehaviour
     public GameObject _launchCanvas;
 
     public GameObject _levelCompleteCanvas;
+    public GameObject _levelFailedCanvas;
     
     void Start()
     {
@@ -62,6 +63,13 @@ public class CameraHandler : MonoBehaviour
     public void LevelCompleteView()
     {
         _levelCompleteCanvas.SetActive(true);
+        _launchCanvas.SetActive(false);
+        _godCanvas.SetActive(false);
+    }
+
+    public void LevelFailedView()
+    {
+        _levelFailedCanvas.SetActive(true);
         _launchCanvas.SetActive(false);
         _godCanvas.SetActive(false);
     }

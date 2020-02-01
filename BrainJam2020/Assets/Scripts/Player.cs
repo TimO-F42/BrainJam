@@ -28,11 +28,14 @@ public class Player : MonoBehaviour
 
     public bool _launched;
 
+    private float failTimer;
+    private float TimeToFail = 15.0f;
+    
     private void Start()
     {
         FindObjectOfType<CameraHandler>()._launchCamera = _playerCamera;
-        _rigidbody = GetComponent<Rigidbody>();
         _planets = FindObjectsOfType<Planet>();
+        ToggleRagdollDisabled(true);
     }
     
     
@@ -49,6 +52,36 @@ public class Player : MonoBehaviour
         
         
     }
+    
+    public void ToggleRagdollDisabled(bool isActive) 
+    {
+        foreach (Transform child in GetComponentsInChildren<Transform>())
+        {
+            if (child.GetComponent<Rigidbody>())
+            {
+                if (child.gameObject.name == "PlayerOLD(Clone)")
+                {
+                    child.GetComponent<Rigidbody>().isKinematic = false;
+                }
+                else
+                {
+                    child.GetComponent<Rigidbody>().isKinematic = isActive;
+                }
+            }
+            
+            if (child.GetComponent<Collider>())
+            {
+                if (child.gameObject.name == "PlayerOLD(Clone)")
+                {
+                    child.GetComponent<Collider>().enabled = true;
+                }
+                else
+                {
+                    child.GetComponent<Collider>().enabled = !isActive;
+                }
+            }
+        }
+    }
 
     private void Update()
     {
@@ -62,5 +95,17 @@ public class Player : MonoBehaviour
         _speed = difference.magnitude;
 
         _previousPosition = transform.position;
+
+        if (_launched)
+        {
+            failTimer += Time.deltaTime;
+
+            float norm = failTimer / TimeToFail;
+
+            if (norm >= 1.0f)
+            {
+                FindObjectOfType<CameraHandler>().LevelFailedView();
+            }
+        }
     }
 }

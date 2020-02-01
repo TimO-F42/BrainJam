@@ -27,11 +27,12 @@
             <e p="IDilatable.cs" t="Include" />
           </e>
           <e p="Game.cs" t="Include" />
+          <e p="LandOnPlanet.cs" t="Include" />
           <e p="Launcher.cs" t="Include" />
           <e p="Planet.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="SimpleCameraController.cs" t="Include" />
-          <e p="SuccessFulLand.cs" t="Include" />
+          <e p="SuccessFullLandWrongPlanet.cs" t="Include" />
           <e p="SystemInputSetup.cs" t="Include" />
           <e p="TargetPlanet.cs" t="Include" />
         </e>

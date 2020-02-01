@@ -1,21 +1,27 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class SuccessFulLand : MonoBehaviour
+public class LandOnPlanet : MonoBehaviour
 {
     public float landDuration = 5.0f;
 
-    private float timer;
+    protected float timer;
 
     public bool landed;
 
     public UnityEvent _event;
-
-    private void OnTriggerStay(Collider other)
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.GetComponent<Player>())
+        {
+            other.GetComponent<Player>().ToggleRagdollDisabled(false);
+        }
+    }
+    
+    public virtual void OnTriggerStay(Collider other)
     {
         if (other.GetComponent<Player>())
         {
@@ -30,14 +36,14 @@ public class SuccessFulLand : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    public virtual void OnTriggerExit(Collider other)
     {
         if (other.GetComponent<Player>())
         {
             timer = 0.0f;
         }
     }
-
+    
     private void Update()
     {
         if (landed)

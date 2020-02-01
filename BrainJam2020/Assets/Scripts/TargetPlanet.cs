@@ -16,7 +16,7 @@ public class TargetPlanet : Planet
         Vector3 force = transform.position - playerPosition;
         float distance = force.magnitude;
         
-        float strength = (PlayerPhysics.gravConstVal * 70.0f * PlayerPhysics.mass) / (distance * distance);
+        float strength = (PlayerPhysics.gravConstVal * 30.0f * PlayerPhysics.mass) / (distance * distance);
         force.Normalize();
         force = force * strength;
         return force;
