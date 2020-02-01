@@ -244,7 +244,7 @@ MonoBehaviour:
   _period: 0.1
   _lerpSpeed: 0.2
   _rotateSpeed: 0
-  _radius: 20
+  _radius: 7.7
   _isTargetPlanet: 0
 --- !u!135 &47739303
 SphereCollider:

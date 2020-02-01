@@ -44,5 +44,7 @@ public class Launcher : MonoBehaviour
         Vector3 forwardThrust = player.transform.forward * thrust;
         
         rb.AddForce(forwardThrust.x,forwardThrust.y, forwardThrust.z, ForceMode.Impulse);
+        
+        FindObjectOfType<CameraHandler>().SwitchToPlayerView();
     }
 }

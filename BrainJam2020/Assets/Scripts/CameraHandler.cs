@@ -46,6 +46,19 @@ public class CameraHandler : MonoBehaviour
         _game._viewState = Game.ViewState.GOD;
     }
 
+    public void SwitchToPlayerView()
+    {
+        _launchCamera.gameObject.SetActive(false);
+        _godCamera.gameObject.SetActive(true);
+        _godCanvas.SetActive(true);
+        _launchCanvas.SetActive(false);
+        _levelCompleteCanvas.SetActive(false);
+        _game._viewState = Game.ViewState.GOD;
+        FindObjectOfType<GodCamera>().target = FindObjectOfType<Player>().transform;
+        FindObjectOfType<GodCameraFollow>().offset = new Vector3(35, 88, -50);
+        FindObjectOfType<GodCameraFollow>().target = FindObjectOfType<Player>().transform;
+    }
+
     public void LevelCompleteView()
     {
         _levelCompleteCanvas.SetActive(true);
