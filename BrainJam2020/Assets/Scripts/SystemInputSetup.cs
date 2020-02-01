@@ -5,6 +5,7 @@ using System.Globalization;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.UI;
 
 public struct PanelInfo
 {
@@ -31,7 +32,9 @@ public class SystemInputSetup : MonoBehaviour
 
     public Camera godCamera;
 
-    public float _textOffset  ;
+    public float _textOffset;
+
+    public GameObject _launchButton;
     
     // Start is called before the first frame update
     void Start()
@@ -63,6 +66,35 @@ public class SystemInputSetup : MonoBehaviour
             UpdatePlanetRadius(panel);
             ReadPanelInput(panel);
         }
+
+        if (!CheckIfPlayerCanGoLaunchMode())
+        {
+            _launchButton.GetComponent<Image>().color = Color.gray;
+            _launchButton.GetComponent<Button>().interactable = false;
+        }
+        else
+        {
+            _launchButton.GetComponent<Image>().color = Color.white;
+            _launchButton.GetComponent<Button>().interactable = true;
+        }
+    }
+
+    private bool CheckIfPlayerCanGoLaunchMode()
+    {
+        float dummyValCheck;
+        foreach (PanelInfo panel in _panels)
+        {
+            if (!float.TryParse(panel._planetRadius.text, out dummyValCheck))
+            {
+                return false;
+            }
+            if (!float.TryParse(panel._planetMass.text, out dummyValCheck))
+            {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     private void UpdatePanelPosition(PanelInfo panel, RectTransform canvasRect)
