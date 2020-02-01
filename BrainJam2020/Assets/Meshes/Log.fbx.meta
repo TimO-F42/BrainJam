@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: eca55e0e706dbc0478989c87d30ec25f
+guid: b73b2b3f0ec3b33469b5a2e7feda888d
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
   externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: cloud_lambert1
-    second: {fileID: 2100000, guid: 81f4f116db659364eb092888af905cda, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
