@@ -32,6 +32,7 @@ public class LandOnPlanet : MonoBehaviour
             if (completeNorm >= 1.0f)
             {
                 landed = true;
+                other.GetComponent<Player>()._launched = false;
             }
         }
     }

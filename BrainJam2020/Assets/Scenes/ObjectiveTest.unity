@@ -1915,13 +1915,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1401894699}
-  m_LocalRotation: {x: -0.104326226, y: 0.6545763, z: 0.091897845, w: 0.74310213}
-  m_LocalPosition: {x: -39.428146, y: -115.79169, z: 51.033627}
+  m_LocalRotation: {x: -0.042875286, y: 0.90075654, z: -0.18380536, w: 0.39117128}
+  m_LocalPosition: {x: -74.3, y: -42.7, z: 139.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 447063131}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -15.983001, y: 82.75201, z: 0}
+  m_LocalEulerAnglesHint: {x: 17.313002, y: 131.005, z: -13.387001}
 --- !u!114 &1401894705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2686,6 +2686,11 @@ PrefabInstance:
       propertyPath: _game
       value: 
       objectReference: {fileID: 2136432709}
+    - target: {fileID: 534688119052263560, guid: cf199d27746dc1840880f0b0982c79ee,
+        type: 3}
+      propertyPath: _playerVelocity
+      value: 
+      objectReference: {fileID: 81385843}
     - target: {fileID: 534688119052263561, guid: cf199d27746dc1840880f0b0982c79ee,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2757,9 +2762,24 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2589514638639536651, guid: 1255c17c8b14ed84e8faa17eb03fe6ce,
         type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2589514638639536651, guid: 1255c17c8b14ed84e8faa17eb03fe6ce,
+        type: 3}
       propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2136432707}
+    - target: {fileID: 2589514638639536651, guid: 1255c17c8b14ed84e8faa17eb03fe6ce,
+        type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2589514638639536651, guid: 1255c17c8b14ed84e8faa17eb03fe6ce,
+        type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2589514640420561240, guid: 1255c17c8b14ed84e8faa17eb03fe6ce,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2819,6 +2839,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TargetPlanet
+      objectReference: {fileID: 0}
+    - target: {fileID: 3397401768540451609, guid: 1255c17c8b14ed84e8faa17eb03fe6ce,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1255c17c8b14ed84e8faa17eb03fe6ce, type: 3}

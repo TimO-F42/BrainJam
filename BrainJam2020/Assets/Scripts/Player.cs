@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public static class PlayerPhysics
@@ -31,6 +32,8 @@ public class Player : MonoBehaviour
     private float failTimer;
     private float TimeToFail = 15.0f;
     
+    
+    
     private void Start()
     {
         FindObjectOfType<CameraHandler>()._launchCamera = _playerCamera;
@@ -49,8 +52,6 @@ public class Player : MonoBehaviour
                 _rigidbody.AddForce(_planets[i].PlanetForce(transform.position));
             }
         }
-        
-        
     }
     
     public void ToggleRagdollDisabled(bool isActive) 
@@ -82,6 +83,8 @@ public class Player : MonoBehaviour
             }
         }
     }
+    
+    
 
     private void Update()
     {
@@ -106,6 +109,10 @@ public class Player : MonoBehaviour
             {
                 FindObjectOfType<CameraHandler>().LevelFailedView();
             }
+        }
+        else
+        {
+            failTimer = 0.0f;
         }
     }
 }

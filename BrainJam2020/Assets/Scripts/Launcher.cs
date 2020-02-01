@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Launcher : MonoBehaviour
@@ -12,7 +13,8 @@ public class Launcher : MonoBehaviour
     private GameObject player;
 
     public float thrust;
-    
+    public TMP_InputField _playerVelocity;
+    private float velocity;
     
     // Start is called before the first frame update
     void Start()
@@ -35,9 +37,21 @@ public class Launcher : MonoBehaviour
         }
         
     }
+    
+    public float SetChosenVelocity()
+    {
+        if (float.TryParse(_playerVelocity.text, out velocity))
+        {
+            return velocity;
+        }
+
+        return 0;
+    }
 
     public void LaunchPlayer()
     {
+        thrust = SetChosenVelocity();
+        
         Rigidbody rb = FindObjectOfType<Player>()._rigidbody;
         FindObjectOfType<Player>()._launched = true;
         
