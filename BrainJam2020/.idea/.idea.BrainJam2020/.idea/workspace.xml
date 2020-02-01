@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04030bee-a917-4e5e-9539-4793fe0e56d3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BrainJam2020/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BrainJam2020/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BrainJam2020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BrainJam2020/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/MasterShader.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/MasterShader.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlanetSelector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlanetSelector.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/ObjectiveTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ObjectiveTest.unity" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -91,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/GodCamera.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+            <state relative-caret-position="432">
+              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
               <folding>
                 <marker date="1580575170264" expanded="false" signature="6:78" ph="..." />
                 <marker date="1580575170264" expanded="true" signature="118:1435" ph="{...}" />
@@ -113,17 +114,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/PlanetSelector.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+            <state relative-caret-position="528">
+              <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
               <folding>
-                <marker date="1580575149224" expanded="false" signature="6:78" ph="..." />
-                <marker date="1580575149224" expanded="true" signature="123:660" ph="{...}" />
-                <marker date="1580575149224" expanded="true" signature="337:658" ph="{...}" />
-                <marker date="1580575149224" expanded="true" signature="450:652" ph="{...}" />
-                <marker date="1580575149224" expanded="true" signature="509:642" ph="{...}" />
+                <marker date="1580575803511" expanded="false" signature="6:78" ph="..." />
+                <marker date="1580575803511" expanded="true" signature="123:1185" ph="{...}" />
+                <marker date="1580575803511" expanded="true" signature="375:1183" ph="{...}" />
+                <marker date="1580575803511" expanded="true" signature="492:1159" ph="{...}" />
+                <marker date="1580575803511" expanded="true" signature="547:680" ph="{...}" />
+                <marker date="1580575803511" expanded="true" signature="742:1136" ph="{...}" />
+                <marker date="1580575803511" expanded="true" signature="843:1122" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -251,9 +254,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TargetPlanet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SuccessFulLand.cs" />
-        <option value="$PROJECT_DIR$/Assets/PlanetSelector.cs" />
         <option value="$PROJECT_DIR$/Assets/GodCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/GodCameraFollow.cs" />
+        <option value="$PROJECT_DIR$/Assets/PlanetSelector.cs" />
       </list>
     </option>
   </component>
@@ -334,12 +337,12 @@
       <updated>1580483134337</updated>
       <workItem from="1580483135696" duration="14594000" />
       <workItem from="1580505477372" duration="2421000" />
-      <workItem from="1580551321940" duration="21312000" />
+      <workItem from="1580551321940" duration="21933000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38327000" />
+    <option name="totallyTimeSpent" value="38948000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -581,24 +584,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/PlanetSelector.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-          <folding>
-            <marker date="1580575149224" expanded="false" signature="6:78" ph="..." />
-            <marker date="1580575149224" expanded="true" signature="123:660" ph="{...}" />
-            <marker date="1580575149224" expanded="true" signature="337:658" ph="{...}" />
-            <marker date="1580575149224" expanded="true" signature="450:652" ph="{...}" />
-            <marker date="1580575149224" expanded="true" signature="509:642" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/GodCamera.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        <state relative-caret-position="432">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
           <folding>
             <marker date="1580575170264" expanded="false" signature="6:78" ph="..." />
             <marker date="1580575170264" expanded="true" signature="118:1435" ph="{...}" />
@@ -611,6 +600,22 @@
             <marker date="1580575170264" expanded="true" signature="953:1067" ph="{...}" />
             <marker date="1580575170264" expanded="true" signature="1105:1222" ph="{...}" />
             <marker date="1580575170264" expanded="true" signature="1268:1384" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/PlanetSelector.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+          <folding>
+            <marker date="1580575803511" expanded="false" signature="6:78" ph="..." />
+            <marker date="1580575803511" expanded="true" signature="123:1185" ph="{...}" />
+            <marker date="1580575803511" expanded="true" signature="375:1183" ph="{...}" />
+            <marker date="1580575803511" expanded="true" signature="492:1159" ph="{...}" />
+            <marker date="1580575803511" expanded="true" signature="547:680" ph="{...}" />
+            <marker date="1580575803511" expanded="true" signature="742:1136" ph="{...}" />
+            <marker date="1580575803511" expanded="true" signature="843:1122" ph="{...}" />
           </folding>
         </state>
       </provider>
