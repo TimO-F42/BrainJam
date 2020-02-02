@@ -19,7 +19,8 @@ public class Planet : BaseObject
     
     protected override void Start()
     {
-        base.Start();
+        //base.Start();
+        _player = FindObjectOfType<Player>();
         _direction = Vector3.back;
         _rigidbody = GetComponent<Rigidbody>();
     }
@@ -56,15 +57,23 @@ public class Planet : BaseObject
 
     public override void Update()
     {
-        base.Update();
-        
-        //DAY/NIGHT for planets
-        /*if (Tick())
-        {
-            Quaternion myRotation = transform.localRotation;
-            _targetQuaternion = new Quaternion(myRotation.x, myRotation.y + _rotateSpeed + Time.deltaTime, myRotation.z, myRotation.w);
-        }
+        if (!FindObjectOfType<Player>()) return;
+        if (!_player)_player = FindObjectOfType<Player>();
+        RotatePlanet();
+    }
 
-        transform.localRotation = Quaternion.Lerp(transform.localRotation, _targetQuaternion, Time.deltaTime * _period);*/
+    protected Vector3 currentRotation;
+    protected Vector3 targetRotation;
+    
+    public virtual void RotatePlanet()
+    {
+        if (Tick())
+        {
+            currentRotation = transform.eulerAngles;
+            targetRotation = new Vector3(currentRotation.x, currentRotation.y + _rotateSpeed + Time.deltaTime, currentRotation.z);
+        }
+        
+        if (_player._speed != 0) transform.eulerAngles = Vector3.Lerp(currentRotation, targetRotation, Time.deltaTime * _lerpSpeed);
+        else transform.eulerAngles = Vector3.Lerp(currentRotation, targetRotation, Time.deltaTime);
     }
 }
