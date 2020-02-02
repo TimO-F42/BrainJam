@@ -23,6 +23,12 @@ public class Game : MonoBehaviour
         GameManager.Instance.MoveToNextLevel();
     }
 
+    public void RestartLevel()
+    {
+        readyForCompletion = false;
+        GameManager.Instance.RestartLevel();
+    }
+
     private void Update()
     {
         if (readyForCompletion)

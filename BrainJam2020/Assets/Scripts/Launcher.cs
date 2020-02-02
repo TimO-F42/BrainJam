@@ -36,7 +36,6 @@ public class Launcher : MonoBehaviour
         {
             transform.Rotate(-Input.GetAxis ("Vertical") * speed, Input.GetAxis ("Horizontal") * speed, 0.0f);
         }
-        
     }
 
     public void LaunchPlayer()
