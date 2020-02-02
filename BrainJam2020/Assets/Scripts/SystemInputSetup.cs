@@ -65,32 +65,8 @@ public class SystemInputSetup : MonoBehaviour
             UpdatePanelPosition(panel, canvasRect);
             ReadPanelInput(panel);
         }
-        /*
-        if (!CheckIfPlayerCanGoLaunchMode())
-        {
-            _launchButton.GetComponent<Image>().color = Color.gray;
-            _launchButton.GetComponent<Button>().interactable = false;
-        }
-        else
-        {
-            _launchButton.GetComponent<Image>().color = Color.white;
-            _launchButton.GetComponent<Button>().interactable = true;
-        }*/
+        
     }
-
-    /*private bool CheckIfPlayerCanGoLaunchMode()
-    {
-        float dummyValCheck;
-        foreach (PanelInfo panel in _panels)
-        {
-            if (!float.TryParse(panel._planetMass.text, out dummyValCheck))
-            {
-                return false;
-            }
-        }
-
-        return true;
-    }*/
 
     private void UpdatePanelPosition(PanelInfo panel, RectTransform canvasRect)
     {

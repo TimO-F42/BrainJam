@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Launcher : MonoBehaviour
 {
     public GameObject _playerObject;
     public Transform _launchPosition;
-    public float speed = 5.0f;
+    public float speed = 0.8f;
     
     public Game _game;
     private GameObject player;
-
+    public Slider _playerVelocity;
     public float thrust;
-    public TMP_InputField _playerVelocity;
     private float velocity;
     
     // Start is called before the first frame update
@@ -26,6 +26,7 @@ public class Launcher : MonoBehaviour
     {
         player = Instantiate(_playerObject, _launchPosition.position, Quaternion.identity);
         player.transform.SetParent(this.transform);
+        transform.LookAt(GameObject.Find("TargetPlanet").transform);
     }
 
     // Update is called once per frame
@@ -33,24 +34,13 @@ public class Launcher : MonoBehaviour
     {
         if (_game._viewState == Game.ViewState.LAUNCH)
         {
-            transform.Rotate(-Input.GetAxis ("Vertical") * speed, -Input.GetAxis ("Horizontal") * speed, 0.0f);
+            transform.Rotate(-Input.GetAxis ("Vertical") * speed, Input.GetAxis ("Horizontal") * speed, 0.0f);
         }
-        
-    }
-    
-    public float SetChosenVelocity()
-    {
-        if (float.TryParse(_playerVelocity.text, out velocity))
-        {
-            return velocity;
-        }
-
-        return 0;
     }
 
     public void LaunchPlayer()
     {
-        thrust = SetChosenVelocity();
+        thrust = _playerVelocity.value;
         
         Rigidbody rb = FindObjectOfType<Player>()._rigidbody;
         FindObjectOfType<Player>()._launched = true;

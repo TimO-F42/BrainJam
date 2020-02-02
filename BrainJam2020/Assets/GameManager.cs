@@ -28,4 +28,10 @@ public class GameManager : GenericSingleton<GameManager>
         SceneManager.LoadScene(levels[_currentLevel], LoadSceneMode.Additive);
     }
 
+    public void RestartLevel()
+    {
+        SceneManager.UnloadSceneAsync(levels[_currentLevel]);
+        SceneManager.LoadScene(levels[_currentLevel], LoadSceneMode.Additive);
+    }
+
 }
