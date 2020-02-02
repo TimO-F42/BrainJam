@@ -60,7 +60,7 @@ public class Player : MonoBehaviour
         {
             if (child.GetComponent<Rigidbody>())
             {
-                if (child.gameObject.name == "PlayerOLD(Clone)")
+                if (child.gameObject.name == "Player(Clone)")
                 {
                     child.GetComponent<Rigidbody>().isKinematic = false;
                 }
@@ -72,7 +72,7 @@ public class Player : MonoBehaviour
             
             if (child.GetComponent<Collider>())
             {
-                if (child.gameObject.name == "PlayerOLD(Clone)")
+                if (child.gameObject.name == "Player(Clone)")
                 {
                     child.GetComponent<Collider>().enabled = true;
                 }
