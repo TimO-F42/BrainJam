@@ -57,9 +57,11 @@ public class Planet : BaseObject
 
     public override void Update()
     {
+        transform.Rotate(Vector3.up * Time.deltaTime * _rotateSpeed);
         if (!FindObjectOfType<Player>()) return;
         if (!_player)_player = FindObjectOfType<Player>();
-        RotatePlanet();
+        //TODO FIX: RotatePlanet();
+        
     }
 
     protected Vector3 currentRotation;
