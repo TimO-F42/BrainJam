@@ -86,7 +86,7 @@ public class Launcher : MonoBehaviour
     public void LaunchPlayer()
     {
         _startTrail = true;
-
+        
         thrust = _playerVelocity.value;
         
         Rigidbody rb = FindObjectOfType<Player>()._rigidbody;
