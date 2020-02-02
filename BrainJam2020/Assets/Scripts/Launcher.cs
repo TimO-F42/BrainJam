@@ -17,6 +17,8 @@ public class Launcher : MonoBehaviour
     public float thrust;
     private float velocity;
 
+    public bool _startTrail = false;
+
     public Vector3 targetLook;
     // Start is called before the first frame update
     void Start()
@@ -83,6 +85,8 @@ public class Launcher : MonoBehaviour
 
     public void LaunchPlayer()
     {
+        _startTrail = true;
+
         thrust = _playerVelocity.value;
         
         Rigidbody rb = FindObjectOfType<Player>()._rigidbody;
