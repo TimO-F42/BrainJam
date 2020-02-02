@@ -26,6 +26,7 @@ public class Launcher : MonoBehaviour
     {
         player = Instantiate(_playerObject, _launchPosition.position, Quaternion.identity);
         player.transform.SetParent(this.transform);
+        transform.LookAt(GameObject.Find("TargetPlanet").transform);
     }
 
     // Update is called once per frame
