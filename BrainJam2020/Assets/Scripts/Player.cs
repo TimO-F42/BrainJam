@@ -116,7 +116,7 @@ public class Player : MonoBehaviour
 
         if (_launched)
         {
-            failTimer += Time.deltaTime;
+            if (!nearTarget) failTimer += Time.deltaTime;
             _animator.SetTrigger("BallToIdle");
             float norm = failTimer / TimeToFail;
 

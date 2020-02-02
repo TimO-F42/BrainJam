@@ -71,6 +71,7 @@ public class CameraHandler : MonoBehaviour
         _levelCompleteCanvas.SetActive(true);
         _launchCanvas.SetActive(false);
         _godCanvas.SetActive(false);
+        FindObjectOfType<Game>().readyForCompletion = true;
     }
 
     public void LevelFailedView()

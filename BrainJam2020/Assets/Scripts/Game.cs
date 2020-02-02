@@ -7,9 +7,10 @@ public class Game : MonoBehaviour
 {
     public float completeDuration;
     private float completeTimer;
-    private bool readyForCompletion;
+    public bool readyForCompletion;
 
     public bool _stopTrail = false;
+    public GameObject _trail;
 
     public enum ViewState
     {
@@ -22,7 +23,7 @@ public class Game : MonoBehaviour
     public void LoadNextLevel()
     {
         _stopTrail = true;
-
+        Destroy(_trail);
         readyForCompletion = true;
         GameManager.Instance.MoveToNextLevel();
     }
