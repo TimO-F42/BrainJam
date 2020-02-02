@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
     private float TimeToFail = 15.0f;
 
     public Animator _animator;
-    
+    public bool nearTarget;
     
     
     private void Start()
@@ -48,7 +48,7 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (_launched)
+        if (_launched && !nearTarget)
         {
             for (int i = 0; i < _planets.Length; i++)
             {

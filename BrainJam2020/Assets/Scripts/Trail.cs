@@ -9,8 +9,9 @@ public class Trail : MonoBehaviour
     private Game _game;
     public Material LineMaterial;
     public List<Vector3> CurrentTrail;
-    //public ArrayList<ArrayList<Vector3>> Trails;
-    public int trailNumber = 0;
+
+    public int maxPositions = 200;
+    private int currentPos = 0;
 
     private bool _saveTrail = false;
 
@@ -40,17 +41,19 @@ public class Trail : MonoBehaviour
                 _saveTrail = true;
             }
 
-            if (_saveTrail)
+            if (_saveTrail && currentPos < maxPositions)
             {
                 if (!_squirrel)
                     _squirrel = (Player)FindObjectOfType(typeof(Player));
                 CurrentTrail.Add(_squirrel.transform.position);
+                currentPos++;
             }
 
             if(_game._stopTrail)
             {
                 _game._stopTrail = false;
                 _saveTrail = false;
+                currentPos = 0;
             }
         }
 
