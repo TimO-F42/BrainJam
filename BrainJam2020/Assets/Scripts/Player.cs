@@ -44,6 +44,7 @@ public class Player : MonoBehaviour
         _planets = FindObjectsOfType<Planet>();
         ToggleRagdollDisabled(true);
         _animator = GetComponent<Animator>();
+        GetComponent<Rigidbody>().isKinematic = true;
     }
     
     

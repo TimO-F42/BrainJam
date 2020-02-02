@@ -12,7 +12,7 @@ public class Launcher : MonoBehaviour
     public float speed = 0.8f;
     
     public Game _game;
-    private GameObject player;
+    public GameObject player;
     public Slider _playerVelocity;
     public float thrust;
     private float velocity;
@@ -20,16 +20,25 @@ public class Launcher : MonoBehaviour
     public bool _startTrail = false;
 
     public Vector3 targetLook;
+
+    public Transform startSlingPos;
+
+    public Animator slingAnimator;
+
+    public GameObject world;
+
+    public Transform slingDir;
     // Start is called before the first frame update
     void Start()
     {
         SpawnPlayer();
+        
     }
 
     void SpawnPlayer()
     {
-        player = Instantiate(_playerObject, _launchPosition.position, Quaternion.identity);
-        player.transform.SetParent(this.transform);
+        //player = Instantiate(_playerObject, _launchPosition.position, Quaternion.identity, startSlingPos);
+        //player.transform.SetParent(startSlingPos, false);
         
         transform.LookAt(GameObject.Find("TargetPlanet").transform);
         targetLook = transform.forward;
@@ -54,6 +63,7 @@ public class Launcher : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (_game._viewState == Game.ViewState.LAUNCH)
         {
             currentAngle = transform.eulerAngles.x;
@@ -85,17 +95,22 @@ public class Launcher : MonoBehaviour
 
     public void LaunchPlayer()
     {
+        FindObjectOfType<Player>().transform.SetParent(world.transform);
+        slingAnimator.SetTrigger("Sling");
         _startTrail = true;
         
         thrust = _playerVelocity.value;
         
         Rigidbody rb = FindObjectOfType<Player>()._rigidbody;
+        rb.isKinematic = false;
         FindObjectOfType<Player>()._launched = true;
         
-        Vector3 forwardThrust = player.transform.forward * thrust;
+        Vector3 forwardThrust = slingDir.forward * thrust;
         
         rb.AddForce(forwardThrust.x,forwardThrust.y, forwardThrust.z, ForceMode.Impulse);
         
         FindObjectOfType<CameraHandler>().SwitchToPlayerView();
+        
+        //
     }
 }
