@@ -28,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1654016243204647765}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 66, y: 70, z: 0}
   m_LocalScale: {x: 5.577874, y: 5.577874, z: 5.577874}
   m_Children:
@@ -130,8 +130,8 @@ MonoBehaviour:
   _lerpSpeed: 0.2
   _rotateSpeed: 0
   _radius: 8.2
-  _minMass: 10
-  _maxMass: 25
+  _minMass: 20
+  _maxMass: 40
   _isTargetPlanet: 0
 --- !u!1 &7338002154934632342
 GameObject:

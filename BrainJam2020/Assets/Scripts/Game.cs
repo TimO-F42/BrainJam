@@ -9,6 +9,8 @@ public class Game : MonoBehaviour
     private float completeTimer;
     private bool readyForCompletion;
 
+    public bool _stopTrail = false;
+
     public enum ViewState
     {
         GOD,
@@ -19,12 +21,16 @@ public class Game : MonoBehaviour
 
     public void LoadNextLevel()
     {
+        _stopTrail = true;
+
         readyForCompletion = true;
         GameManager.Instance.MoveToNextLevel();
     }
 
     public void RestartLevel()
     {
+        _stopTrail = true;
+
         readyForCompletion = false;
         GameManager.Instance.RestartLevel();
     }
