@@ -229,8 +229,6 @@ GameObject:
   m_Component:
   - component: {fileID: 534688119120686035}
   - component: {fileID: 6312709804442469508}
-  - component: {fileID: 5570453346579666377}
-  - component: {fileID: 1904619596725548307}
   m_Layer: 0
   m_Name: LaunchPosition
   m_TagString: Untagged
@@ -273,6 +271,7 @@ MonoBehaviour:
   _game: {fileID: 0}
   _playerVelocity: {fileID: 0}
   thrust: 20
+  _startTrail: 0
   targetLook: {x: 0, y: 0, z: 0}
   X: 0
   Y: 0
@@ -283,53 +282,6 @@ MonoBehaviour:
   aimWidthMax: -10
   aimHeightMin: -40
   aimHeightMax: 40
---- !u!33 &5570453346579666377
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 534688119120686036}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &1904619596725548307
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 534688119120686036}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
 --- !u!64 &2055354697
 MeshCollider:
   m_ObjectHideFlags: 0
