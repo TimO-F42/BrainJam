@@ -24,7 +24,6 @@ public class Player : MonoBehaviour
     public Camera _playerCamera;
 
     public Rigidbody _rigidbody;
-    public Rigidbody _ragdoll;
     
     private Planet[] _planets;
 
@@ -32,7 +31,9 @@ public class Player : MonoBehaviour
 
     private float failTimer;
     private float TimeToFail = 15.0f;
-    
+
+    public Animator _animator;
+    public bool nearTarget;
     
     
     private void Start()
@@ -40,18 +41,18 @@ public class Player : MonoBehaviour
         FindObjectOfType<CameraHandler>()._launchCamera = _playerCamera;
         _planets = FindObjectsOfType<Planet>();
         ToggleRagdollDisabled(true);
+        _animator = GetComponent<Animator>();
     }
     
     
 
     private void FixedUpdate()
     {
-        if (_launched)
+        if (_launched && !nearTarget)
         {
             for (int i = 0; i < _planets.Length; i++)
             {
                 _rigidbody.AddForce(_planets[i].PlanetForce(transform.position));
-                //_ragdoll.AddForce(_planets[i].PlanetForce(transform.position) * 20.0f);
             }
         }
     }
@@ -104,7 +105,7 @@ public class Player : MonoBehaviour
         if (_launched)
         {
             failTimer += Time.deltaTime;
-
+            _animator.SetTrigger("BallToIdle");
             float norm = failTimer / TimeToFail;
 
             if (norm >= 1.0f)
