@@ -18,7 +18,8 @@ public class Trail : MonoBehaviour
 
     public float _timeBetweenPositions;
     private float _time;
-
+    public bool forceStopDraw;
+    
     private void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
@@ -62,8 +63,8 @@ public class Trail : MonoBehaviour
                 currentPos = 0;
             }
         }
-
-        DrawTrail();
+        
+        if (!forceStopDraw) DrawTrail();
     }
 
     void DrawTrail()

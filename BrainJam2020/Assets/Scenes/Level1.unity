@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -275,6 +275,7 @@ MonoBehaviour:
   CurrentTrail: []
   maxPositions: 200
   _timeBetweenPositions: 0.3333
+  forceStopDraw: 0
 --- !u!4 &918459040
 Transform:
   m_ObjectHideFlags: 0
@@ -560,7 +561,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 10000
   field of view: 60
   orthographic: 0
   orthographic size: 5

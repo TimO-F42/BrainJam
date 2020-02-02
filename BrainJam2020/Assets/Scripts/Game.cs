@@ -18,6 +18,11 @@ public class Game : MonoBehaviour
         LAUNCH
     }
 
+    public void Start()
+    {
+        _trail.GetComponent<Trail>().forceStopDraw = false;
+    }
+
     public ViewState _viewState;
 
     public void LoadNextLevel()
@@ -25,13 +30,15 @@ public class Game : MonoBehaviour
         _stopTrail = true;
         Destroy(_trail);
         readyForCompletion = true;
+        
         GameManager.Instance.MoveToNextLevel();
+        
     }
 
     public void RestartLevel()
     {
         _stopTrail = true;
-
+        _trail.GetComponent<Trail>().forceStopDraw = true;
         readyForCompletion = false;
         GameManager.Instance.RestartLevel();
     }
