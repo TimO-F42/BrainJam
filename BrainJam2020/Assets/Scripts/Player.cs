@@ -24,6 +24,7 @@ public class Player : MonoBehaviour
     public Camera _playerCamera;
 
     public Rigidbody _rigidbody;
+    public Rigidbody _ragdoll;
     
     private Planet[] _planets;
 
@@ -56,6 +57,7 @@ public class Player : MonoBehaviour
             for (int i = 0; i < _planets.Length; i++)
             {
                 _rigidbody.AddForce(_planets[i].PlanetForce(transform.position));
+                //_ragdoll.AddForce(_planets[i].PlanetForce(transform.position) * 20.0f);
             }
         }
     }
