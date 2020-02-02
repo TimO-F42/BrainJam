@@ -1,14 +1,11 @@
 fileFormatVersion: 2
-guid: f4c95e93c4b87774e9a08d5e74e19586
+guid: 1c315091bbbf88742b2012f1e8e1fb40
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable:
   - first:
-      74: 1827226128182048838
-    second: Take 001
-  - first:
-      74: 1114137334239716859
-    second: GlideIdle
+      74: 7645126830728263561
+    second: RollOut
   externalObjects: {}
   materials:
     materialImportMode: 1
