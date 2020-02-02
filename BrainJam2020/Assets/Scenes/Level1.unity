@@ -252,7 +252,7 @@ GameObject:
   - component: {fileID: 918459040}
   - component: {fileID: 918459039}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Trail Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -273,7 +273,7 @@ MonoBehaviour:
   _launcher: {fileID: 1119679363}
   LineMaterial: {fileID: 2100000, guid: d105f745c3de56e4a9376c6ca1e84b09, type: 2}
   CurrentTrail: []
-  trailNumber: 0
+  maxPositions: 200
   _timeBetweenPositions: 0.3333
 --- !u!4 &918459040
 Transform:
