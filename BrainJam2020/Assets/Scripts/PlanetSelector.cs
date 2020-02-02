@@ -12,39 +12,49 @@ public class PlanetSelector : MonoBehaviour
     public GodCamera _camHandler;
 
     private Material _material;
-    
+
+    private Game _game;
+
+    void Start()
+    {
+        _game = FindObjectOfType<Game>();
+    }
+
     // Update is called once per frame
     void Update()
     {
-        _ray = _godCamera.ScreenPointToRay(Input.mousePosition);
-
-        if (Physics.Raycast(_ray, out _hit))
+        if(_game._viewState == Game.ViewState.GOD)
         {
-            if (Input.GetMouseButtonDown(0))
-            {
-                _camFollow.target = _hit.transform;
-                _camHandler.target = _hit.transform;
-            }
+            _ray = _godCamera.ScreenPointToRay(Input.mousePosition);
 
-            if (_hit.transform.GetComponentInChildren<MeshRenderer>())
+            if (Physics.Raycast(_ray, out _hit))
             {
-                if (_material != _hit.transform.GetComponentInChildren<MeshRenderer>().material)
+                if (Input.GetMouseButtonDown(0))
                 {
-                    if (_material)
-                    {
-                        _material.SetInt("isHighlighted",0);
-                    }
-                    
-                    _material = _hit.transform.GetComponentInChildren<MeshRenderer>().material;
-                    _hit.transform.GetComponentInChildren<MeshRenderer>().material.SetInt("isHighlighted",1);
+                    _camFollow.target = _hit.transform;
+                    _camHandler.target = _hit.transform;
                 }
+
+                if (_hit.transform.GetComponentInChildren<MeshRenderer>())
+                {
+                    if (_material != _hit.transform.GetComponentInChildren<MeshRenderer>().material)
+                    {
+                        if (_material)
+                        {
+                            _material.SetInt("isHighlighted", 0);
+                        }
+
+                        _material = _hit.transform.GetComponentInChildren<MeshRenderer>().material;
+                        _hit.transform.GetComponentInChildren<MeshRenderer>().material.SetInt("isHighlighted", 1);
+                    }
+                }
+
             }
-            
-        }
-        else if(_material)
-        {
-            _material.SetInt("isHighlighted", 0);
-            _material = null;
+            else if (_material)
+            {
+                _material.SetInt("isHighlighted", 0);
+                _material = null;
+            }
         }
     }
 }
