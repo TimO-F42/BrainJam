@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 1941416924579029208}
   - component: {fileID: 1013355381146531132}
   - component: {fileID: 342870957828631002}
+  - component: {fileID: 2758450605906132110}
   m_Layer: 0
-  m_Name: PlayerOLD
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55,6 +56,8 @@ MonoBehaviour:
   _playerCamera: {fileID: 6748031472992833237}
   _rigidbody: {fileID: 1013355381146531132}
   _launched: 0
+  ballDuration: 0
+  _animator: {fileID: 0}
 --- !u!54 &1013355381146531132
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -84,6 +87,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &2758450605906132110
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941416924579029214}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: b90777bd6a8cb4d4d8f30817f3a9e0cb, type: 3}
+  m_Controller: {fileID: 9100000, guid: f9d371e1b639cf048ac5cffa80bdbab5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2884626793020559582
 GameObject:
   m_ObjectHideFlags: 0

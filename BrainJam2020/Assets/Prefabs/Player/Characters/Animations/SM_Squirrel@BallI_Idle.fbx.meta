@@ -1,8 +1,11 @@
 fileFormatVersion: 2
-guid: b90777bd6a8cb4d4d8f30817f3a9e0cb
+guid: bb6681e0cab8f1a4cbc467f69b9a43ac
 ModelImporter:
   serializedVersion: 19300
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: 6518779634471870944
+    second: BallI_Idle
   externalObjects: {}
   materials:
     materialImportMode: 1

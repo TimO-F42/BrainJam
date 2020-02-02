@@ -31,6 +31,10 @@ public class Player : MonoBehaviour
 
     private float failTimer;
     private float TimeToFail = 15.0f;
+    private float ballToIdleTimer;
+    public float ballDuration = 2.0f;
+
+    public Animator _animator;
     
     
     
@@ -38,7 +42,9 @@ public class Player : MonoBehaviour
     {
         FindObjectOfType<CameraHandler>()._launchCamera = _playerCamera;
         _planets = FindObjectsOfType<Planet>();
+        _animator = GetComponent<Animator>();
         ToggleRagdollDisabled(true);
+        
     }
     
     
@@ -101,9 +107,16 @@ public class Player : MonoBehaviour
 
         if (_launched)
         {
+            ballToIdleTimer += Time.deltaTime;
             failTimer += Time.deltaTime;
 
             float norm = failTimer / TimeToFail;
+            float ballNorm = ballToIdleTimer / ballDuration;
+
+            if (ballNorm >= 1.0f)
+            {
+                _animator.SetTrigger("IdleMode");
+            }
 
             if (norm >= 1.0f)
             {

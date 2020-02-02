@@ -55,19 +55,6 @@ public class Launcher : MonoBehaviour
         if (_game._viewState == Game.ViewState.LAUNCH)
         {
             currentAngle = transform.eulerAngles.x;
-            /*if (currentAngle <= maxAngle && currentAngle >= minAngle)
-            {
-                X = -Input.GetAxis("Vertical") * speed;
-                transform.Rotate(X, Y, 0.0f);
-            }
-            else
-            {
-                X = 0;
-                if (currentAngle > maxAngle) transform.eulerAngles = new Vector3(maxAngle, transform.eulerAngles.y, transform.eulerAngles.z);
-                if (currentAngle < minAngle) transform.eulerAngles = new Vector3(minAngle, transform.eulerAngles.y, transform.eulerAngles.z);
-            }
-            
-            Y = Input.GetAxis("Horizontal") * speed;*/
             
             X += -Input.GetAxis("Vertical") * speed * Time.deltaTime;
             X = Mathf.Clamp(X, aimWidthMin, aimWidthMax);
@@ -76,8 +63,6 @@ public class Launcher : MonoBehaviour
             Y = Mathf.Clamp(Y, aimHeightMin, aimHeightMax);
             
             transform.rotation = Quaternion.AngleAxis(X, Vector3.right) * Quaternion.AngleAxis(Y, Vector3.up);
-
-
         }
     }
 
