@@ -277,9 +277,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 534688118697132367}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1026286023 stripped
+--- !u!114 &1119679363 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 534688119052263560, guid: cf199d27746dc1840880f0b0982c79ee,
+  m_CorrespondingSourceObject: {fileID: 6312709804442469508, guid: cf199d27746dc1840880f0b0982c79ee,
     type: 3}
   m_PrefabInstance: {fileID: 534688118697132367}
   m_PrefabAsset: {fileID: 0}
@@ -562,6 +562,11 @@ PrefabInstance:
       propertyPath: _playerVelocity
       value: 
       objectReference: {fileID: 316013262}
+    - target: {fileID: 534688119052263560, guid: cf199d27746dc1840880f0b0982c79ee,
+        type: 3}
+      propertyPath: speed
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 534688119052263561, guid: cf199d27746dc1840880f0b0982c79ee,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -622,6 +627,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Launcher
       objectReference: {fileID: 0}
+    - target: {fileID: 6312709804442469508, guid: cf199d27746dc1840880f0b0982c79ee,
+        type: 3}
+      propertyPath: _game
+      value: 
+      objectReference: {fileID: 2136432709}
+    - target: {fileID: 6312709804442469508, guid: cf199d27746dc1840880f0b0982c79ee,
+        type: 3}
+      propertyPath: _playerVelocity
+      value: 
+      objectReference: {fileID: 316013262}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf199d27746dc1840880f0b0982c79ee, type: 3}
 --- !u!1001 &2589514638483263132
@@ -831,7 +846,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1026286023}
+      objectReference: {fileID: 1119679363}
+    - target: {fileID: 5032655430855628954, guid: 72d6efdd683e4fd4d9c640431dd73331,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LaunchPlayer
+      objectReference: {fileID: 0}
     - target: {fileID: 5032655430882402619, guid: 72d6efdd683e4fd4d9c640431dd73331,
         type: 3}
       propertyPath: m_IsActive

@@ -8,7 +8,7 @@ public class Launcher : MonoBehaviour
 {
     public GameObject _playerObject;
     public Transform _launchPosition;
-    public float speed = 5.0f;
+    public float speed = 0.8f;
     
     public Game _game;
     private GameObject player;
@@ -33,7 +33,7 @@ public class Launcher : MonoBehaviour
     {
         if (_game._viewState == Game.ViewState.LAUNCH)
         {
-            transform.Rotate(-Input.GetAxis ("Vertical") * speed, -Input.GetAxis ("Horizontal") * speed, 0.0f);
+            transform.Rotate(-Input.GetAxis ("Vertical") * speed, Input.GetAxis ("Horizontal") * speed, 0.0f);
         }
         
     }
