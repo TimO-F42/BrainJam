@@ -17,16 +17,15 @@ public class LandOnPlanet : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
-        if (!isTarget)
+        if (other.GetComponent<Player>())
         {
-            if (other.GetComponent<Player>())
+            Debug.Log("OTHER PLAYER");
+            other.GetComponent<Player>().ToggleRagdollDisabled(false);
+            if (isTarget)
             {
-                other.GetComponent<Player>().ToggleRagdollDisabled(false);
+                other.GetComponent<Player>().target = this.transform;
+                other.GetComponent<Player>().nearTarget = true;
             }
-        }
-        else
-        {
-            
         }
         
     }
@@ -34,24 +33,19 @@ public class LandOnPlanet : MonoBehaviour
     public virtual void OnTriggerStay(Collider other)
     {
         if (other.gameObject.name == "Goal_Prefab") return;
-        if (other.GetComponent<Player>())
+        if (other.tag == "Player") CheckLandedOnPlanet(other);
+    }
+
+    private void CheckLandedOnPlanet(Collider player)
+    {
+        timer += Time.deltaTime;
+
+        float completeNorm = timer / landDuration;
+
+        if (completeNorm >= 1.0f)
         {
-            if (isTarget)
-            {
-                other.GetComponent<Player>().nearTarget = true;
-                other.GetComponent<Player>().transform.position =
-                    Vector3.Lerp(other.GetComponent<Player>().transform.position, transform.position, Time.deltaTime * 0.2f);
-            }
-            
-            timer += Time.deltaTime;
-
-            float completeNorm = timer / landDuration;
-
-            if (completeNorm >= 1.0f)
-            {
-                landed = true;
-                other.GetComponent<Player>()._launched = false;
-            }
+            landed = true;
+            //player.GetComponent<Player>()._launched = false;
         }
     }
 

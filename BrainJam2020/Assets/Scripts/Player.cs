@@ -34,6 +34,8 @@ public class Player : MonoBehaviour
 
     public Animator _animator;
     public bool nearTarget;
+
+    public float lerpSpeed;
     
     
     private void Start()
@@ -86,11 +88,21 @@ public class Player : MonoBehaviour
             }
         }
     }
-    
-    
+
+    public Transform target;
+
+    public void LerpToTransform()
+    {
+        transform.position = Vector3.Lerp(transform.position, target.position, Time.deltaTime * lerpSpeed);
+    }
 
     private void Update()
     {
+        if (nearTarget)
+        {
+            _rigidbody.detectCollisions = false;
+            LerpToTransform();
+        }
         if (_speed != 0)
         {
             _normalizedSpeed = _speed / _maxSpeed;

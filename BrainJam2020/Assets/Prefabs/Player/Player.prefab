@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 1013355381146531132}
   - component: {fileID: 342870957828631002}
   - component: {fileID: -6432392375567832194}
+  - component: {fileID: 5596934470495751703}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56,6 +57,8 @@ MonoBehaviour:
   _launched: 0
   _animator: {fileID: 0}
   nearTarget: 0
+  lerpSpeed: 5.23
+  target: {fileID: 0}
 --- !u!54 &1013355381146531132
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -104,6 +107,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &5596934470495751703
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941416924579029214}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.28, y: 1.25, z: 3.39}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &8614466675072750757
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -111,6 +127,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1941416924579029215}
     m_Modifications:
+    - target: {fileID: 269254860812844003, guid: c7a95aafc0ae76048a24c10e54ec2031,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 740970788917911884, guid: c7a95aafc0ae76048a24c10e54ec2031,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -166,6 +187,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2143060410451440612, guid: c7a95aafc0ae76048a24c10e54ec2031,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2368323461579306090, guid: c7a95aafc0ae76048a24c10e54ec2031,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266747899472314579, guid: c7a95aafc0ae76048a24c10e54ec2031,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 4328852978861757279, guid: c7a95aafc0ae76048a24c10e54ec2031,
         type: 3}
       propertyPath: m_Name
@@ -175,6 +211,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4328852978861757279, guid: c7a95aafc0ae76048a24c10e54ec2031,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664621205804362465, guid: c7a95aafc0ae76048a24c10e54ec2031,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 5706836772647814200, guid: c7a95aafc0ae76048a24c10e54ec2031,
         type: 3}
@@ -570,6 +616,11 @@ PrefabInstance:
         type: 3}
       propertyPath: far clip plane
       value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7599708743483693010, guid: c7a95aafc0ae76048a24c10e54ec2031,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7a95aafc0ae76048a24c10e54ec2031, type: 3}
