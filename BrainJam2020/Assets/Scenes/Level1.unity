@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -754,8 +754,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded7783addd07d04a9ef5855774a6f45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  completeDuration: 0
+  completeDuration: 3
+  readyForCompletion: 0
   _stopTrail: 0
+  _trail: {fileID: 918459038}
   _viewState: 0
 --- !u!1001 &534688118697132367
 PrefabInstance:
@@ -907,6 +909,21 @@ PrefabInstance:
         type: 3}
       propertyPath: isTarget
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2589514638639536651, guid: 1255c17c8b14ed84e8faa17eb03fe6ce,
+        type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2136432709}
+    - target: {fileID: 2589514638639536651, guid: 1255c17c8b14ed84e8faa17eb03fe6ce,
+        type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LoadNextLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2589514638639536651, guid: 1255c17c8b14ed84e8faa17eb03fe6ce,
+        type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2589514640420561240, guid: 1255c17c8b14ed84e8faa17eb03fe6ce,
         type: 3}

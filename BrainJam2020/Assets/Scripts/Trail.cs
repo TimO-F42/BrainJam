@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,6 +18,11 @@ public class Trail : MonoBehaviour
 
     public float _timeBetweenPositions;
     private float _time;
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -82,4 +88,6 @@ public class Trail : MonoBehaviour
         lr.SetPosition(1, end);
         GameObject.Destroy(myLine, duration);
     }
+    
+    
 }
