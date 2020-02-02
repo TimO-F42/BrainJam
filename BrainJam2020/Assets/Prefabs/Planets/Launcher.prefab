@@ -269,10 +269,20 @@ MonoBehaviour:
   _playerObject: {fileID: 1941416924579029214, guid: 788cbec93383a4745b77406890c5dfee,
     type: 3}
   _launchPosition: {fileID: 534688119120686035}
-  speed: 5
+  speed: 30
   _game: {fileID: 0}
   _playerVelocity: {fileID: 0}
   thrust: 20
+  targetLook: {x: 0, y: 0, z: 0}
+  X: 0
+  Y: 0
+  maxAngle: 0
+  minAngle: 0
+  currentAngle: 0
+  aimWidthMin: -60
+  aimWidthMax: -10
+  aimHeightMin: -40
+  aimHeightMax: 40
 --- !u!33 &5570453346579666377
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -320,6 +330,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &2055354697
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5651891323801592245}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1736622283181914040, guid: 1aa29a275f19092498fe96718c856e3a, type: 3}
 --- !u!1001 &5875939758377035162
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -397,6 +421,12 @@ PrefabInstance:
 --- !u!4 &5354356714804104965 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2001277207079037599, guid: 27e33e937d423d5419e7c99881e41c0d,
+    type: 3}
+  m_PrefabInstance: {fileID: 5875939758377035162}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5651891323801592245 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2297967356873671727, guid: 27e33e937d423d5419e7c99881e41c0d,
     type: 3}
   m_PrefabInstance: {fileID: 5875939758377035162}
   m_PrefabAsset: {fileID: 0}
