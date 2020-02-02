@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -877,6 +877,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 424416762}
     m_Modifications:
+    - target: {fileID: 2589514638639536648, guid: 1255c17c8b14ed84e8faa17eb03fe6ce,
+        type: 3}
+      propertyPath: m_Radius
+      value: 2.92
+      objectReference: {fileID: 0}
     - target: {fileID: 2589514638639536651, guid: 1255c17c8b14ed84e8faa17eb03fe6ce,
         type: 3}
       propertyPath: _event.m_PersistentCalls.m_Calls.Array.size
@@ -896,6 +901,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2589514638639536651, guid: 1255c17c8b14ed84e8faa17eb03fe6ce,
+        type: 3}
+      propertyPath: isTarget
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2589514640420561240, guid: 1255c17c8b14ed84e8faa17eb03fe6ce,
         type: 3}
@@ -956,6 +966,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TargetPlanet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2589514640420561245, guid: 1255c17c8b14ed84e8faa17eb03fe6ce,
+        type: 3}
+      propertyPath: m_Radius
+      value: 3.08
       objectReference: {fileID: 0}
     - target: {fileID: 3397401768540451609, guid: 1255c17c8b14ed84e8faa17eb03fe6ce,
         type: 3}
