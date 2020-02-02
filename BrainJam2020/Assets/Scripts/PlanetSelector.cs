@@ -26,22 +26,25 @@ public class PlanetSelector : MonoBehaviour
                 _camHandler.target = _hit.transform;
             }
 
-            if (_hit.transform.GetComponent<MeshRenderer>())
+            if (_hit.transform.GetComponentInChildren<MeshRenderer>())
             {
-                if (_material != _hit.transform.GetComponent<MeshRenderer>().material)
+                if (_material != _hit.transform.GetComponentInChildren<MeshRenderer>().material)
                 {
                     if (_material)
                     {
                         _material.SetInt("isHighlighted",0);
                     }
                     
-                    _material = _hit.transform.GetComponent<MeshRenderer>().material;
-                    _hit.transform.GetComponent<MeshRenderer>().material.SetInt("isHighlighted",1);
+                    _material = _hit.transform.GetComponentInChildren<MeshRenderer>().material;
+                    _hit.transform.GetComponentInChildren<MeshRenderer>().material.SetInt("isHighlighted",1);
                 }
             }
             
         }
-        
-        
+        else if(_material)
+        {
+            _material.SetInt("isHighlighted", 0);
+            _material = null;
+        }
     }
 }
