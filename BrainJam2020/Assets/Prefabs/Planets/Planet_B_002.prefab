@@ -130,6 +130,8 @@ MonoBehaviour:
   _lerpSpeed: 0.2
   _rotateSpeed: 0
   _radius: 8.2
+  _minMass: 10
+  _maxMass: 25
   _isTargetPlanet: 0
 --- !u!1 &7338002154934632342
 GameObject:

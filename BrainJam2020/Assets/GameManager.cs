@@ -25,7 +25,7 @@ public class GameManager : GenericSingleton<GameManager>
     {
         SceneManager.UnloadSceneAsync(levels[_currentLevel]);
         _currentLevel++;
-        SceneManager.LoadScene(levels[_currentLevel]);
+        SceneManager.LoadScene(levels[_currentLevel], LoadSceneMode.Additive);
     }
 
 }

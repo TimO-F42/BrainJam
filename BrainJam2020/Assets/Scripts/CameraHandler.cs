@@ -51,7 +51,7 @@ public class CameraHandler : MonoBehaviour
     {
         _launchCamera.gameObject.SetActive(false);
         _godCamera.gameObject.SetActive(true);
-        _godCanvas.SetActive(true);
+        _godCanvas.SetActive(false);
         _launchCanvas.SetActive(false);
         _levelCompleteCanvas.SetActive(false);
         _game._viewState = Game.ViewState.GOD;

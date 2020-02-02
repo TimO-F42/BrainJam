@@ -736,6 +736,12 @@ PrefabInstance:
       propertyPath: godCamera
       value: 
       objectReference: {fileID: 1401894703}
+    - target: {fileID: 5032655429819152851, guid: 72d6efdd683e4fd4d9c640431dd73331,
+        type: 3}
+      propertyPath: _planetUITemplate
+      value: 
+      objectReference: {fileID: 7784693584940517744, guid: 2cf58288b799cd744a9f10c2ce2fe3b6,
+        type: 3}
     - target: {fileID: 5032655430226623772, guid: 72d6efdd683e4fd4d9c640431dd73331,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -880,5 +886,10 @@ PrefabInstance:
       propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2136432707}
+    - target: {fileID: 7338002155153863257, guid: 1ca407816421f9d4ea0a54b6e811dad6,
+        type: 3}
+      propertyPath: _radius
+      value: 8.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ca407816421f9d4ea0a54b6e811dad6, type: 3}

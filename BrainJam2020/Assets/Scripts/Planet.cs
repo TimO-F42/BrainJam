@@ -9,11 +9,13 @@ public class Planet : BaseObject
     public float _rotateSpeed;
     private Quaternion _targetQuaternion;
     [SerializeField]
-    [Range(1,40)]
-    private float _radius;
+    public float _radius;
     private float _mass;
     private Rigidbody _rigidbody;
+    public float _minMass;
+    public float _maxMass;
     public bool _isTargetPlanet;
+    
     
     protected override void Start()
     {
@@ -26,6 +28,8 @@ public class Planet : BaseObject
     {
         return _radius;
     }
+    
+    
 
     public virtual void SetPlanetRadius(float radius)
     {
@@ -53,10 +57,6 @@ public class Planet : BaseObject
     public override void Update()
     {
         base.Update();
-        
-        transform.localScale = Vector3.one * _radius;
-        
-        
         
         //DAY/NIGHT for planets
         /*if (Tick())

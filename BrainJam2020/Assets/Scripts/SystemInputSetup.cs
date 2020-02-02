@@ -11,14 +11,12 @@ public struct PanelInfo
 {
     public RectTransform _transform;
     public Planet _planet;
-    public TMP_InputField _planetMass;
-    public TMP_InputField _planetRadius;
+    public Slider _planetMass;
     public TMP_Text _gravityForceText;
 
     public void Finalise()
     {
-        _planet.SetPlanetMass(float.Parse(_planetMass.text));
-        _planet.SetPlanetRadius(float.Parse(_planetRadius.text));
+        _planet.SetPlanetMass(_planetMass.value);
     }
 }
 
@@ -48,8 +46,10 @@ public class SystemInputSetup : MonoBehaviour
             PanelInfo panel;
             panel._planet = _planets[i];
             panel._transform = ui.GetComponent<RectTransform>();
-            panel._planetMass = GetInputField(ui.transform, "MassVal");
-            panel._planetRadius = GetInputField(ui.transform, "RadiusVal");
+            panel._planetMass = GetSlider(ui.transform, "MassVal");
+            panel._planetMass.minValue = panel._planet._minMass;
+            panel._planetMass.maxValue = panel._planet._maxMass;
+            panel._planetMass.wholeNumbers = true;
             panel._gravityForceText = GetGravityForceText(ui.transform);
             _panels.Add(panel);
             panel._transform.SetParent(transform, false);
@@ -63,10 +63,9 @@ public class SystemInputSetup : MonoBehaviour
         foreach (PanelInfo panel in _panels)
         {
             UpdatePanelPosition(panel, canvasRect);
-            UpdatePlanetRadius(panel);
             ReadPanelInput(panel);
         }
-
+        /*
         if (!CheckIfPlayerCanGoLaunchMode())
         {
             _launchButton.GetComponent<Image>().color = Color.gray;
@@ -76,18 +75,14 @@ public class SystemInputSetup : MonoBehaviour
         {
             _launchButton.GetComponent<Image>().color = Color.white;
             _launchButton.GetComponent<Button>().interactable = true;
-        }
+        }*/
     }
 
-    private bool CheckIfPlayerCanGoLaunchMode()
+    /*private bool CheckIfPlayerCanGoLaunchMode()
     {
         float dummyValCheck;
         foreach (PanelInfo panel in _panels)
         {
-            if (!float.TryParse(panel._planetRadius.text, out dummyValCheck))
-            {
-                return false;
-            }
             if (!float.TryParse(panel._planetMass.text, out dummyValCheck))
             {
                 return false;
@@ -95,7 +90,7 @@ public class SystemInputSetup : MonoBehaviour
         }
 
         return true;
-    }
+    }*/
 
     private void UpdatePanelPosition(PanelInfo panel, RectTransform canvasRect)
     {
@@ -111,38 +106,17 @@ public class SystemInputSetup : MonoBehaviour
         double gravForce = CalculateStrengthOnSurface(panel);
         
         panel._gravityForceText.text = $"{(Math.Truncate(100 * gravForce) / 100).ToString()} m/s" ;
-        //Debug.Log($"GRAVITY: {gravForce}");
-
-    }
-
-    private void UpdatePlanetRadius(PanelInfo panel)
-    {
-        float planetRadius;
-        if (float.TryParse(panel._planetRadius.text, out planetRadius))
-        {
-            panel._planet.SetPlanetRadius(planetRadius);
-        }
     }
 
     private float CalculateStrengthOnSurface(PanelInfo panel)
     {
         Vector3 force = Vector3.one * panel._planet.GetPlanetRadius();
-        float planetMass;
         
-        if (float.TryParse(panel._planetMass.text, out planetMass))
-        {
-            if (planetMass == 0) return 0;
-        
-            float distance = force.magnitude;
-            float strength = (PlayerPhysics.gravConstVal * planetMass * PlayerPhysics.mass) / (distance * distance);
-            force.Normalize();
-            force = force * strength;
-            return strength;
-        }
-        else
-        {
-            return 0;
-        }
+        float distance = force.magnitude;
+        float strength = (PlayerPhysics.gravConstVal * panel._planetMass.value * PlayerPhysics.mass) / (distance * distance);
+        force.Normalize();
+        force = force * strength;
+        return strength;
     }
 
     public void SetFinalPlanetValues()
@@ -160,6 +134,19 @@ public class SystemInputSetup : MonoBehaviour
             if (child.GetComponent<TMP_InputField>()&& child.gameObject.name == objectName)
             {
                 return child.GetComponent<TMP_InputField>();
+            }
+        }
+
+        return null;
+    }
+
+    private Slider GetSlider(Transform ui, string objectName)
+    {
+        foreach (Transform child in ui.GetComponentsInChildren<Transform>())
+        {
+            if (child.GetComponent<Slider>()&& child.gameObject.name == objectName)
+            {
+                return child.GetComponent<Slider>();
             }
         }
 
