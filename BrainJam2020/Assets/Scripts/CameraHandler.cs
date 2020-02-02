@@ -11,6 +11,8 @@ public class CameraHandler : MonoBehaviour
     public Camera _launchCamera;
     public GameObject _launchCanvas;
 
+    public GameObject _inGameCanvas;
+
     public GameObject _levelCompleteCanvas;
     public GameObject _levelFailedCanvas;
     
@@ -29,6 +31,7 @@ public class CameraHandler : MonoBehaviour
 
     public void SwitchToLaunchView()
     {
+        _inGameCanvas.gameObject.SetActive(false);
         _launchCamera.gameObject.SetActive(true);
         _godCamera.gameObject.SetActive(false);
         _launchCanvas.SetActive(true);
@@ -39,6 +42,7 @@ public class CameraHandler : MonoBehaviour
 
     public void SwitchToGodView()
     {
+        _inGameCanvas.gameObject.SetActive(false);
         _launchCamera.gameObject.SetActive(false);
         _godCamera.gameObject.SetActive(true);
         _godCanvas.SetActive(true);
@@ -49,6 +53,7 @@ public class CameraHandler : MonoBehaviour
 
     public void SwitchToPlayerView()
     {
+        _inGameCanvas.gameObject.SetActive(true);
         _launchCamera.gameObject.SetActive(false);
         _godCamera.gameObject.SetActive(true);
         _godCanvas.SetActive(false);
@@ -62,6 +67,7 @@ public class CameraHandler : MonoBehaviour
 
     public void LevelCompleteView()
     {
+        _inGameCanvas.gameObject.SetActive(false);
         _levelCompleteCanvas.SetActive(true);
         _launchCanvas.SetActive(false);
         _godCanvas.SetActive(false);
@@ -69,6 +75,7 @@ public class CameraHandler : MonoBehaviour
 
     public void LevelFailedView()
     {
+        _inGameCanvas.gameObject.SetActive(false);
         _levelFailedCanvas.SetActive(true);
         _launchCanvas.SetActive(false);
         _godCanvas.SetActive(false);
