@@ -17,7 +17,6 @@ public class LandOnPlanet : MonoBehaviour
     {
         if (other.GetComponent<Player>())
         {
-            other.GetComponent<Player>()._animator.enabled = false;
             other.GetComponent<Player>().ToggleRagdollDisabled(false);
         }
     }
