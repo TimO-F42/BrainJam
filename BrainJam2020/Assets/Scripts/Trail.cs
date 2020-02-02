@@ -7,7 +7,7 @@ public class Trail : MonoBehaviour
     public Launcher _launcher;
     private Player _squirrel;
     private Game _game;
-
+    public Material LineMaterial;
     public List<Vector3> CurrentTrail;
     //public ArrayList<ArrayList<Vector3>> Trails;
     public int trailNumber = 0;
@@ -61,7 +61,22 @@ public class Trail : MonoBehaviour
     {
         for (int i = 0; i < CurrentTrail.Count - 1; i++)
         {
-            Debug.DrawLine(CurrentTrail[i], CurrentTrail[i + 1], new Color(0.0f, 0.0f, 1.0f));
+            //Debug.DrawLine(CurrentTrail[i], CurrentTrail[i + 1], new Color(1.0f, 0.0f, 1.0f));
+            DrawLine(CurrentTrail[i], CurrentTrail[i + 1], new Color(1.0f, 0.0f, 1.0f));
         }
+    }
+    
+    void DrawLine(Vector3 start, Vector3 end, Color color, float duration = 0.2f)
+    {
+        GameObject myLine = new GameObject();
+        myLine.transform.position = start;
+        myLine.AddComponent<LineRenderer>();
+        LineRenderer lr = myLine.GetComponent<LineRenderer>();
+        lr.material = LineMaterial;
+        lr.SetColors(color, color);
+        lr.SetWidth(0.1f, 0.1f);
+        lr.SetPosition(0, start);
+        lr.SetPosition(1, end);
+        GameObject.Destroy(myLine, duration);
     }
 }
