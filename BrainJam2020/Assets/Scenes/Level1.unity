@@ -1180,5 +1180,25 @@ PrefabInstance:
       propertyPath: _radius
       value: 8.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7338002155153863257, guid: 1ca407816421f9d4ea0a54b6e811dad6,
+        type: 3}
+      propertyPath: _speed
+      value: 1.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 7338002155153863257, guid: 1ca407816421f9d4ea0a54b6e811dad6,
+        type: 3}
+      propertyPath: _maxPeriod
+      value: 0.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 7338002155153863257, guid: 1ca407816421f9d4ea0a54b6e811dad6,
+        type: 3}
+      propertyPath: _period
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 7338002155153863257, guid: 1ca407816421f9d4ea0a54b6e811dad6,
+        type: 3}
+      propertyPath: _rotateSpeed
+      value: 24.22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ca407816421f9d4ea0a54b6e811dad6, type: 3}

@@ -34,4 +34,9 @@ public class TargetPlanet : Planet
 
         transform.localRotation = Quaternion.Lerp(transform.localRotation, _targetQuaternion, Time.deltaTime * _period);*/
     }
+
+    public override void RotatePlanet()
+    {
+        
+    }
 }
