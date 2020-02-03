@@ -9,7 +9,9 @@ public class Trail : MonoBehaviour
     private Player _squirrel;
     private Game _game;
     public Material LineMaterial;
+    GameObject myLine;
     public List<Vector3> CurrentTrail;
+    public List<List<Vector3>> trailAttempts;
 
     public int maxPositions = 200;
     private int currentPos = 0;
@@ -19,6 +21,7 @@ public class Trail : MonoBehaviour
     public float _timeBetweenPositions;
     private float _time;
     public bool forceStopDraw;
+    private Vector3 previousPosition;
     
     private void Awake()
     {
@@ -29,7 +32,16 @@ public class Trail : MonoBehaviour
     void Start()
     {
         CurrentTrail = new List<Vector3>();
+        trailAttempts = new List<List<Vector3>>();
+        myLine = new GameObject();
         _game = FindObjectOfType<Game>();
+        if (!_squirrel)
+            _squirrel = (Player)FindObjectOfType(typeof(Player));
+        previousPosition = _squirrel.transform.position;
+        LineRenderer lr = myLine.AddComponent<LineRenderer>();
+        lr.material = LineMaterial;
+        lr.SetWidth(0.1f, 0.1f);
+        
     }
 
     // Update is called once per frame
@@ -43,6 +55,7 @@ public class Trail : MonoBehaviour
 
             if (_launcher._startTrail)
             {
+                if (CurrentTrail != null) trailAttempts.Add(CurrentTrail);
                 CurrentTrail.Clear();
                 _launcher._startTrail = false;
                 _saveTrail = true;
@@ -52,8 +65,14 @@ public class Trail : MonoBehaviour
             {
                 if (!_squirrel)
                     _squirrel = (Player)FindObjectOfType(typeof(Player));
+                
                 CurrentTrail.Add(_squirrel.transform.position);
+                
                 currentPos++;
+                
+                MyDraw(currentPos, previousPosition, _squirrel.transform.position);
+                
+                previousPosition = _squirrel.transform.position;
             }
 
             if(_game._stopTrail)
@@ -63,31 +82,26 @@ public class Trail : MonoBehaviour
                 currentPos = 0;
             }
         }
-        
-        if (!forceStopDraw) DrawTrail();
-    }
-
-    void DrawTrail()
-    {
-        for (int i = 0; i < CurrentTrail.Count - 1; i++)
-        {
-            //Debug.DrawLine(CurrentTrail[i], CurrentTrail[i + 1], new Color(1.0f, 0.0f, 1.0f));
-            DrawLine(CurrentTrail[i], CurrentTrail[i + 1], new Color(1.0f, 0.0f, 1.0f));
-        }
     }
     
     void DrawLine(Vector3 start, Vector3 end, Color color, float duration = 0.2f)
     {
-        GameObject myLine = new GameObject();
+        
         myLine.transform.position = start;
         myLine.AddComponent<LineRenderer>();
         LineRenderer lr = myLine.GetComponent<LineRenderer>();
         lr.material = LineMaterial;
-        lr.SetColors(color, color);
         lr.SetWidth(0.1f, 0.1f);
         lr.SetPosition(0, start);
         lr.SetPosition(1, end);
         GameObject.Destroy(myLine, duration);
+    }
+
+    void MyDraw(int newPositionIndex, Vector3 start, Vector3 end)
+    {
+        myLine.GetComponent<LineRenderer>().SetVertexCount(newPositionIndex + 1);
+        myLine.GetComponent<LineRenderer>().SetPosition(newPositionIndex - 1, start);
+        myLine.GetComponent<LineRenderer>().SetPosition(newPositionIndex, end);
     }
     
     

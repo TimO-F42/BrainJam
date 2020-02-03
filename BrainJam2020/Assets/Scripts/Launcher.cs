@@ -28,6 +28,8 @@ public class Launcher : MonoBehaviour
     public GameObject world;
 
     public Transform slingDir;
+
+    public Trail _trail;
     // Start is called before the first frame update
     void Start()
     {
@@ -63,6 +65,8 @@ public class Launcher : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //if (!_startTrail) _trail.enabled = false;
+        //else _trail.enabled = true;
         
         if (_game._viewState == Game.ViewState.LAUNCH)
         {
@@ -97,7 +101,7 @@ public class Launcher : MonoBehaviour
     {
         FindObjectOfType<Player>().transform.SetParent(world.transform);
         slingAnimator.SetTrigger("Sling");
-        _startTrail = true;
+        
         
         thrust = _playerVelocity.value;
         
@@ -110,6 +114,8 @@ public class Launcher : MonoBehaviour
         rb.AddForce(forwardThrust.x,forwardThrust.y, forwardThrust.z, ForceMode.Impulse);
         
         FindObjectOfType<CameraHandler>().SwitchToPlayerView();
+        
+        _startTrail = true;
         
         //
     }
