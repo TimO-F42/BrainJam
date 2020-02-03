@@ -6,6 +6,7 @@ public class PlanetSelector : MonoBehaviour
 {
     private Ray _ray;
     public Camera _godCamera;
+    private int _canSelect;
     private RaycastHit _hit;
 
     public GodCameraFollow _camFollow;
@@ -18,6 +19,7 @@ public class PlanetSelector : MonoBehaviour
     void Start()
     {
         _game = FindObjectOfType<Game>();
+        _canSelect = 1 << 9;
     }
 
     // Update is called once per frame
@@ -27,7 +29,7 @@ public class PlanetSelector : MonoBehaviour
         {
             _ray = _godCamera.ScreenPointToRay(Input.mousePosition);
 
-            if (Physics.Raycast(_ray, out _hit))
+            if (Physics.Raycast(_ray.origin, _ray.direction, out _hit, Mathf.Infinity, _canSelect))
             {
                 if (Input.GetMouseButtonDown(0))
                 {

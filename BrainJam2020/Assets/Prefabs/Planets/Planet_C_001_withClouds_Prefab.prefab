@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5937139979578676211}
   - component: {fileID: 6582074136184805069}
   - component: {fileID: 2056526135656493800}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Planet_C_001_withClouds_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
