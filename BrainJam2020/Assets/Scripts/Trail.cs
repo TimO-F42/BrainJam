@@ -28,6 +28,14 @@ public class Trail : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
     }
 
+    public void ClearLines()
+    {
+        Destroy(myLine);
+        trailAttempts.Clear();
+        CurrentTrail.Clear();
+        
+    }
+
     // Start is called before the first frame update
     void Start()
     {

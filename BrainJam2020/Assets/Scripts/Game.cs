@@ -28,6 +28,7 @@ public class Game : MonoBehaviour
     public void LoadNextLevel()
     {
         _stopTrail = true;
+        _trail.GetComponent<Trail>().ClearLines();
         Destroy(_trail);
         readyForCompletion = true;
         
