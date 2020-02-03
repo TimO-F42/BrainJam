@@ -33,7 +33,6 @@ public class Trail : MonoBehaviour
         Destroy(myLine);
         trailAttempts.Clear();
         CurrentTrail.Clear();
-        
     }
 
     // Start is called before the first frame update
@@ -90,19 +89,6 @@ public class Trail : MonoBehaviour
                 currentPos = 0;
             }
         }
-    }
-    
-    void DrawLine(Vector3 start, Vector3 end, Color color, float duration = 0.2f)
-    {
-        
-        myLine.transform.position = start;
-        myLine.AddComponent<LineRenderer>();
-        LineRenderer lr = myLine.GetComponent<LineRenderer>();
-        lr.material = LineMaterial;
-        lr.SetWidth(0.1f, 0.1f);
-        lr.SetPosition(0, start);
-        lr.SetPosition(1, end);
-        GameObject.Destroy(myLine, duration);
     }
 
     void MyDraw(int newPositionIndex, Vector3 start, Vector3 end)

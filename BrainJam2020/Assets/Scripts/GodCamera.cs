@@ -5,7 +5,7 @@ using UnityEngine;
 public class GodCamera : MonoBehaviour
 {
     public Transform target;
-    public float turnSpeed = 70f;
+    public float turnSpeed = 300f;
     //private Vector3 offset;
 
     private float distance;
@@ -39,13 +39,17 @@ public class GodCamera : MonoBehaviour
 
     void LateUpdate()
     {
-        Vector2 input = new Vector2(Input.GetAxis("Camera X") * turnSpeed * Time.deltaTime, Input.GetAxis("Camera Y") * turnSpeed * Time.deltaTime);
+        if (Input.GetMouseButton(1))
+        {
+            Vector2 input = new Vector2(Input.GetAxis("Mouse X") * turnSpeed * Time.deltaTime, -Input.GetAxis("Mouse Y") * turnSpeed * Time.deltaTime);
 
-        rotationX = (rotationX + input.x) % 360f;
-        rotationY = (rotationY + input.y) % 360f;
+            rotationX = (rotationX + input.x) % 360f;
+            rotationY = (rotationY + input.y) % 360f;
 
-        transform.localRotation = Quaternion.Euler(rotationY, rotationX, 0f);
+            transform.localRotation = Quaternion.Euler(rotationY, rotationX, 0f);
 
-        transform.position = target.position - transform.forward * distance;
+            transform.position = target.position - transform.forward * distance;
+        }
+        
     }
 }

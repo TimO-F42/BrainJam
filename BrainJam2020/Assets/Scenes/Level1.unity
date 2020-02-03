@@ -222,6 +222,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5208977079461842481, guid: c7e2eef55e69f6144a44e2dd55a8d003,
+        type: 3}
+      propertyPath: turnSpeed
+      value: 250
+      objectReference: {fileID: 0}
     - target: {fileID: 5208977079667044261, guid: c7e2eef55e69f6144a44e2dd55a8d003,
         type: 3}
       propertyPath: m_LocalPosition.z

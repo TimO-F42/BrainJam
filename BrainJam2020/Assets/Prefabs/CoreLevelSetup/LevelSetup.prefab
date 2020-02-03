@@ -299,7 +299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 950459361383637945}
-  turnSpeed: 70
+  turnSpeed: 250
 --- !u!1 &5208977079478928776
 GameObject:
   m_ObjectHideFlags: 0
@@ -827,6 +827,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Planet_B_002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1654016243204647765, guid: 1ca407816421f9d4ea0a54b6e811dad6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2355214218428848454, guid: 1ca407816421f9d4ea0a54b6e811dad6,
         type: 3}
