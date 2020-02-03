@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -792,6 +792,66 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1781975274994105547, guid: c7e2eef55e69f6144a44e2dd55a8d003,
+        type: 3}
+      propertyPath: targetLook.x
+      value: -0.7488583
+      objectReference: {fileID: 0}
+    - target: {fileID: 1781975274994105547, guid: c7e2eef55e69f6144a44e2dd55a8d003,
+        type: 3}
+      propertyPath: targetLook.y
+      value: -0.2007358
+      objectReference: {fileID: 0}
+    - target: {fileID: 1781975274994105547, guid: c7e2eef55e69f6144a44e2dd55a8d003,
+        type: 3}
+      propertyPath: targetLook.z
+      value: -0.63159853
+      objectReference: {fileID: 0}
+    - target: {fileID: 1781975274994105547, guid: c7e2eef55e69f6144a44e2dd55a8d003,
+        type: 3}
+      propertyPath: X
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1781975274994105547, guid: c7e2eef55e69f6144a44e2dd55a8d003,
+        type: 3}
+      propertyPath: Y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1781975274994105547, guid: c7e2eef55e69f6144a44e2dd55a8d003,
+        type: 3}
+      propertyPath: maxAngle
+      value: 56.57999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1781975274994105547, guid: c7e2eef55e69f6144a44e2dd55a8d003,
+        type: 3}
+      propertyPath: minAngle
+      value: -33.42001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1781975274994105547, guid: c7e2eef55e69f6144a44e2dd55a8d003,
+        type: 3}
+      propertyPath: currentAngle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1781975274994105547, guid: c7e2eef55e69f6144a44e2dd55a8d003,
+        type: 3}
+      propertyPath: aimWidthMin
+      value: -192.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1781975274994105547, guid: c7e2eef55e69f6144a44e2dd55a8d003,
+        type: 3}
+      propertyPath: aimWidthMax
+      value: 27.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1781975274994105547, guid: c7e2eef55e69f6144a44e2dd55a8d003,
+        type: 3}
+      propertyPath: aimHeightMin
+      value: -281.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1781975274994105547, guid: c7e2eef55e69f6144a44e2dd55a8d003,
+        type: 3}
+      propertyPath: aimHeightMax
+      value: -139.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2379979179070453235, guid: c7e2eef55e69f6144a44e2dd55a8d003,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -820,6 +880,11 @@ PrefabInstance:
     - target: {fileID: 4251104476078464374, guid: c7e2eef55e69f6144a44e2dd55a8d003,
         type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4281775458823016874, guid: c7e2eef55e69f6144a44e2dd55a8d003,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5160699999319652140, guid: c7e2eef55e69f6144a44e2dd55a8d003,
