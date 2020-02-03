@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8022804360251955539}
   - component: {fileID: 665671969046631266}
   - component: {fileID: 8994078967410363716}
+  - component: {fileID: 8280778373766865106}
   m_Layer: 0
   m_Name: DebrissROCKS3
   m_TagString: Untagged
@@ -94,6 +95,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2038552698741573535, guid: be0287dd8fe82de468027ebf508727cc, type: 3}
+--- !u!114 &8280778373766865106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214147097725174474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43fe0722756e38d42a73cdb0238d0c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 15
 --- !u!1 &1229369765622355685
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,6 +120,7 @@ GameObject:
   - component: {fileID: 3730505866398702173}
   - component: {fileID: 1824917579857876179}
   - component: {fileID: 3781947828365608185}
+  - component: {fileID: 8984027634971320302}
   m_Layer: 0
   m_Name: DebrissROCKS1
   m_TagString: Untagged
@@ -188,6 +203,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5627703353769162748, guid: be0287dd8fe82de468027ebf508727cc, type: 3}
+--- !u!114 &8984027634971320302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229369765622355685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43fe0722756e38d42a73cdb0238d0c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 15
 --- !u!1 &1502879889378131892
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,6 +228,7 @@ GameObject:
   - component: {fileID: 3761638899979321537}
   - component: {fileID: 7349769193751105840}
   - component: {fileID: 7959766087545225195}
+  - component: {fileID: 362410379016957585}
   m_Layer: 0
   m_Name: DebrissROCKS6
   m_TagString: Untagged
@@ -282,6 +311,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3220178580586514109, guid: be0287dd8fe82de468027ebf508727cc, type: 3}
+--- !u!114 &362410379016957585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502879889378131892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43fe0722756e38d42a73cdb0238d0c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
 --- !u!1 &1933405737753286089
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,6 +336,7 @@ GameObject:
   - component: {fileID: 7235781189925188781}
   - component: {fileID: 116639128944950352}
   - component: {fileID: 9151929883328767692}
+  - component: {fileID: 548616502506812414}
   m_Layer: 0
   m_Name: DebrissROCKS11
   m_TagString: Untagged
@@ -376,6 +419,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7230524144590450161, guid: be0287dd8fe82de468027ebf508727cc, type: 3}
+--- !u!114 &548616502506812414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1933405737753286089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43fe0722756e38d42a73cdb0238d0c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20
 --- !u!1 &2118824603987994005
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,6 +444,7 @@ GameObject:
   - component: {fileID: 6072179091598732927}
   - component: {fileID: 3939508111205164232}
   - component: {fileID: 1495048528819965802}
+  - component: {fileID: 8822973754254358153}
   m_Layer: 0
   m_Name: DebrissROCKS13
   m_TagString: Untagged
@@ -470,6 +527,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5700397298587918062, guid: be0287dd8fe82de468027ebf508727cc, type: 3}
+--- !u!114 &8822973754254358153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118824603987994005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43fe0722756e38d42a73cdb0238d0c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
 --- !u!1 &2797981000211811853
 GameObject:
   m_ObjectHideFlags: 0
@@ -482,6 +552,7 @@ GameObject:
   - component: {fileID: 7570505956138672308}
   - component: {fileID: 2260715161230173007}
   - component: {fileID: 2978002105340360132}
+  - component: {fileID: 4406164792494680667}
   m_Layer: 0
   m_Name: DebrissROCKS8
   m_TagString: Untagged
@@ -564,6 +635,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 395117559335414890, guid: be0287dd8fe82de468027ebf508727cc, type: 3}
+--- !u!114 &4406164792494680667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2797981000211811853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43fe0722756e38d42a73cdb0238d0c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 15
 --- !u!1 &2926750848812001060
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,6 +660,7 @@ GameObject:
   - component: {fileID: 7340754356096008303}
   - component: {fileID: 4869743994427044300}
   - component: {fileID: 2261022166730295723}
+  - component: {fileID: 3835161357707695722}
   m_Layer: 0
   m_Name: DebrissROCKS5
   m_TagString: Untagged
@@ -658,6 +743,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7271365359312515185, guid: be0287dd8fe82de468027ebf508727cc, type: 3}
+--- !u!114 &3835161357707695722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2926750848812001060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43fe0722756e38d42a73cdb0238d0c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 15
 --- !u!1 &3205453588248235866
 GameObject:
   m_ObjectHideFlags: 0
@@ -670,6 +768,7 @@ GameObject:
   - component: {fileID: 2994849540808757207}
   - component: {fileID: 3495619812131654312}
   - component: {fileID: 7195929610530270645}
+  - component: {fileID: 2700415612183215726}
   m_Layer: 0
   m_Name: DebrissROCKS4
   m_TagString: Untagged
@@ -752,6 +851,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 9104007251567202728, guid: be0287dd8fe82de468027ebf508727cc, type: 3}
+--- !u!114 &2700415612183215726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3205453588248235866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43fe0722756e38d42a73cdb0238d0c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
 --- !u!1 &3722591247327491120
 GameObject:
   m_ObjectHideFlags: 0
@@ -764,6 +876,7 @@ GameObject:
   - component: {fileID: 6815767280217599568}
   - component: {fileID: 4905875952095153121}
   - component: {fileID: 1587506925569732947}
+  - component: {fileID: 6119147998538122592}
   m_Layer: 0
   m_Name: DebrissROCKS9
   m_TagString: Untagged
@@ -846,6 +959,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5486803088810014792, guid: be0287dd8fe82de468027ebf508727cc, type: 3}
+--- !u!114 &6119147998538122592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3722591247327491120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43fe0722756e38d42a73cdb0238d0c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
 --- !u!1 &4116842928738027027
 GameObject:
   m_ObjectHideFlags: 0
@@ -858,6 +984,7 @@ GameObject:
   - component: {fileID: 9098319284139430985}
   - component: {fileID: 8627202198807105283}
   - component: {fileID: 4652403272516029832}
+  - component: {fileID: 1144557394877465591}
   m_Layer: 0
   m_Name: DebrissROCKS12
   m_TagString: Untagged
@@ -940,6 +1067,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5217416350885544110, guid: be0287dd8fe82de468027ebf508727cc, type: 3}
+--- !u!114 &1144557394877465591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4116842928738027027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43fe0722756e38d42a73cdb0238d0c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 15
 --- !u!1 &6407668703979919519
 GameObject:
   m_ObjectHideFlags: 0
@@ -952,6 +1092,7 @@ GameObject:
   - component: {fileID: 4630348309376507615}
   - component: {fileID: 2670088103264307406}
   - component: {fileID: 8643341954816693183}
+  - component: {fileID: 8353564478733491212}
   m_Layer: 0
   m_Name: DebrissROCKS2
   m_TagString: Untagged
@@ -1034,6 +1175,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2427301477666859839, guid: be0287dd8fe82de468027ebf508727cc, type: 3}
+--- !u!114 &8353564478733491212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6407668703979919519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43fe0722756e38d42a73cdb0238d0c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
 --- !u!1 &8072223208217551074
 GameObject:
   m_ObjectHideFlags: 0
@@ -1046,6 +1200,7 @@ GameObject:
   - component: {fileID: 5315999305257273018}
   - component: {fileID: 955704282109411444}
   - component: {fileID: 7363875897253154912}
+  - component: {fileID: 3182593836824760402}
   m_Layer: 0
   m_Name: DebrissROCKS7
   m_TagString: Untagged
@@ -1128,6 +1283,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6660868007789668349, guid: be0287dd8fe82de468027ebf508727cc, type: 3}
+--- !u!114 &3182593836824760402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8072223208217551074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43fe0722756e38d42a73cdb0238d0c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
 --- !u!1 &9122679269881389829
 GameObject:
   m_ObjectHideFlags: 0
