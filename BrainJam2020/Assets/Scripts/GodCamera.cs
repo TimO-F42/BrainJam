@@ -47,9 +47,8 @@ public class GodCamera : MonoBehaviour
             rotationY = (rotationY + input.y) % 360f;
 
             transform.localRotation = Quaternion.Euler(rotationY, rotationX, 0f);
-
-            transform.position = target.position - transform.forward * distance;
         }
-        
+
+        transform.position = target.position - transform.forward * distance;
     }
 }
