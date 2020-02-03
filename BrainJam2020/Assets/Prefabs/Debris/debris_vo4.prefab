@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 89269907027275170}
   - component: {fileID: 6448498420188835850}
   - component: {fileID: 8111019531525604676}
+  - component: {fileID: 9033430758258376022}
   m_Layer: 0
   m_Name: debrisRockv04_18
   m_TagString: Untagged
@@ -79,6 +80,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &9033430758258376022
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43678901322402440}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8015468652072237147, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &117220350595884888
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,6 +105,7 @@ GameObject:
   - component: {fileID: 360110391375825743}
   - component: {fileID: 8304865618824052346}
   - component: {fileID: 7407541190971536803}
+  - component: {fileID: 5569922489833988961}
   m_Layer: 0
   m_Name: debrisRockv04_3
   m_TagString: Untagged
@@ -158,6 +174,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &5569922489833988961
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117220350595884888}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -614595189927315811, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &468025366326621412
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,6 +199,7 @@ GameObject:
   - component: {fileID: 2596994401007989079}
   - component: {fileID: 5135663250528849154}
   - component: {fileID: 7244221422415794116}
+  - component: {fileID: 6899466880753438383}
   m_Layer: 0
   m_Name: debrisRockv04_50
   m_TagString: Untagged
@@ -237,6 +268,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &6899466880753438383
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468025366326621412}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7653476540808307812, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &627883949771959351
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,6 +293,7 @@ GameObject:
   - component: {fileID: 6919357114774440623}
   - component: {fileID: 7885626657284725696}
   - component: {fileID: 8945624263671335964}
+  - component: {fileID: 3473769036475635538}
   m_Layer: 0
   m_Name: debrisRockv04_38
   m_TagString: Untagged
@@ -316,6 +362,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &3473769036475635538
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627883949771959351}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4518998947008853162, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &820884175841812559
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,6 +468,7 @@ GameObject:
   - component: {fileID: 3660140065065277638}
   - component: {fileID: 6921702647105549820}
   - component: {fileID: 1096569284785285434}
+  - component: {fileID: 5589640338852661584}
   m_Layer: 0
   m_Name: debrisRockv04_34
   m_TagString: Untagged
@@ -476,6 +537,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &5589640338852661584
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942913978734154999}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1628067553870930269, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &1055382854554677081
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,6 +562,7 @@ GameObject:
   - component: {fileID: 80041399371608643}
   - component: {fileID: 1281591419667918184}
   - component: {fileID: 5338036150246680285}
+  - component: {fileID: 6733951653701387820}
   m_Layer: 0
   m_Name: debrisRockv04_48
   m_TagString: Untagged
@@ -555,6 +631,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &6733951653701387820
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055382854554677081}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1884711418050159994, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &1073480811939283273
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,6 +656,7 @@ GameObject:
   - component: {fileID: 4704795605000685820}
   - component: {fileID: 6106589049298902861}
   - component: {fileID: 3772098125959457407}
+  - component: {fileID: 1854386736545578450}
   m_Layer: 0
   m_Name: debrisRockv04_37
   m_TagString: Untagged
@@ -634,6 +725,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &1854386736545578450
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073480811939283273}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -164386788553019689, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &1641993720321748400
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,6 +750,7 @@ GameObject:
   - component: {fileID: 4561112287294333728}
   - component: {fileID: 7891412001424269081}
   - component: {fileID: 54388137426493219}
+  - component: {fileID: 1544263775954882128}
   m_Layer: 0
   m_Name: debrisRockv04_27
   m_TagString: Untagged
@@ -713,6 +819,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &1544263775954882128
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641993720321748400}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6168565149500952093, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &1746549812809401124
 GameObject:
   m_ObjectHideFlags: 0
@@ -724,6 +844,7 @@ GameObject:
   - component: {fileID: 7918548925407927633}
   - component: {fileID: 6954278835511252906}
   - component: {fileID: 7435919068693917283}
+  - component: {fileID: 4142213623933396378}
   m_Layer: 0
   m_Name: debrisRockv04_6
   m_TagString: Untagged
@@ -792,6 +913,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &4142213623933396378
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746549812809401124}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3543166211323805180, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &1844356064133257715
 GameObject:
   m_ObjectHideFlags: 0
@@ -803,6 +938,7 @@ GameObject:
   - component: {fileID: 8365429535881272967}
   - component: {fileID: 4093999119422243776}
   - component: {fileID: 4544063479734908470}
+  - component: {fileID: 6939718238931548084}
   m_Layer: 0
   m_Name: debrisRockv04_33
   m_TagString: Untagged
@@ -871,6 +1007,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &6939718238931548084
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844356064133257715}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5288249268009044159, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &1858288484007756505
 GameObject:
   m_ObjectHideFlags: 0
@@ -882,6 +1032,7 @@ GameObject:
   - component: {fileID: 5808071780388853594}
   - component: {fileID: 5412031002726397907}
   - component: {fileID: 5710955338046111475}
+  - component: {fileID: 8585484061213112565}
   m_Layer: 0
   m_Name: debrisRockv04_47
   m_TagString: Untagged
@@ -950,6 +1101,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8585484061213112565
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858288484007756505}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2079409614681740284, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &2465234776865882502
 GameObject:
   m_ObjectHideFlags: 0
@@ -961,6 +1126,7 @@ GameObject:
   - component: {fileID: 2653095851768994791}
   - component: {fileID: 2304623794936033745}
   - component: {fileID: 6170942971378958709}
+  - component: {fileID: 1365419173244669834}
   m_Layer: 0
   m_Name: debrisRockv04_45
   m_TagString: Untagged
@@ -1029,6 +1195,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &1365419173244669834
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2465234776865882502}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2402122243657419133, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &2512269526826968672
 GameObject:
   m_ObjectHideFlags: 0
@@ -1040,6 +1220,7 @@ GameObject:
   - component: {fileID: 7069476975268389716}
   - component: {fileID: 7962530455019351863}
   - component: {fileID: 4059086702887365895}
+  - component: {fileID: 8299375807708142436}
   m_Layer: 0
   m_Name: debrisRockv04_30
   m_TagString: Untagged
@@ -1108,6 +1289,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8299375807708142436
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2512269526826968672}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7498980009783360958, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &3076126931624790456
 GameObject:
   m_ObjectHideFlags: 0
@@ -1119,6 +1314,7 @@ GameObject:
   - component: {fileID: 8166880310537020923}
   - component: {fileID: 387132084501287205}
   - component: {fileID: 6338400527484601931}
+  - component: {fileID: 8117304915090532829}
   m_Layer: 0
   m_Name: debrisRockv04_36
   m_TagString: Untagged
@@ -1187,6 +1383,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8117304915090532829
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3076126931624790456}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4363874725691882658, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &3157833669252902477
 GameObject:
   m_ObjectHideFlags: 0
@@ -1198,6 +1408,7 @@ GameObject:
   - component: {fileID: 6222795720639860159}
   - component: {fileID: 5160803165557958102}
   - component: {fileID: 1841872677919174742}
+  - component: {fileID: 3270503268566688902}
   m_Layer: 0
   m_Name: debrisRockv04_28
   m_TagString: Untagged
@@ -1266,6 +1477,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &3270503268566688902
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3157833669252902477}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 656532600042838154, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &3259193401934954675
 GameObject:
   m_ObjectHideFlags: 0
@@ -1277,6 +1502,7 @@ GameObject:
   - component: {fileID: 7770854535506033582}
   - component: {fileID: 1614204840900681768}
   - component: {fileID: 7612548969480301443}
+  - component: {fileID: 4635931546438258395}
   m_Layer: 0
   m_Name: debrisRockv04_13
   m_TagString: Untagged
@@ -1345,6 +1571,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &4635931546438258395
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3259193401934954675}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8468252072553482532, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &3481752826392635485
 GameObject:
   m_ObjectHideFlags: 0
@@ -1356,6 +1596,7 @@ GameObject:
   - component: {fileID: 5114766622747598872}
   - component: {fileID: 5238353437772310557}
   - component: {fileID: 1092959160548213756}
+  - component: {fileID: 2856315923162071246}
   m_Layer: 0
   m_Name: debrisRockv04_41
   m_TagString: Untagged
@@ -1424,6 +1665,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &2856315923162071246
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3481752826392635485}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1929192708745905593, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &3708788743602105409
 GameObject:
   m_ObjectHideFlags: 0
@@ -1435,6 +1690,7 @@ GameObject:
   - component: {fileID: 6873137837648738385}
   - component: {fileID: 8785355893703374633}
   - component: {fileID: 1516257825787600186}
+  - component: {fileID: 8376200308621300013}
   m_Layer: 0
   m_Name: debrisRockv04_16
   m_TagString: Untagged
@@ -1503,6 +1759,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8376200308621300013
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3708788743602105409}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3920377274005917368, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &3775717517044727759
 GameObject:
   m_ObjectHideFlags: 0
@@ -1514,6 +1784,7 @@ GameObject:
   - component: {fileID: 2316051496858924487}
   - component: {fileID: 8231770877689505251}
   - component: {fileID: 7200642411773032352}
+  - component: {fileID: 4729294126286094602}
   m_Layer: 0
   m_Name: debrisRockv04_15
   m_TagString: Untagged
@@ -1582,6 +1853,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &4729294126286094602
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3775717517044727759}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8053165784053337590, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &4123011229727564491
 GameObject:
   m_ObjectHideFlags: 0
@@ -1593,6 +1878,7 @@ GameObject:
   - component: {fileID: 4811874715087383417}
   - component: {fileID: 5431033163288838752}
   - component: {fileID: 5987959365057450456}
+  - component: {fileID: 7426932981991899792}
   m_Layer: 0
   m_Name: debrisRockv04_42
   m_TagString: Untagged
@@ -1661,6 +1947,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &7426932981991899792
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4123011229727564491}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4131574431268113374, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &4204842734334357654
 GameObject:
   m_ObjectHideFlags: 0
@@ -1672,6 +1972,7 @@ GameObject:
   - component: {fileID: 5198843280633332766}
   - component: {fileID: 5223238713643918597}
   - component: {fileID: 6614818641614414245}
+  - component: {fileID: 2898751175674053487}
   m_Layer: 0
   m_Name: debrisRockv04_43
   m_TagString: Untagged
@@ -1740,6 +2041,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &2898751175674053487
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4204842734334357654}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3828044713893877872, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &4363559318242915630
 GameObject:
   m_ObjectHideFlags: 0
@@ -1751,6 +2066,7 @@ GameObject:
   - component: {fileID: 7817969153976986169}
   - component: {fileID: 2418475381464043203}
   - component: {fileID: 1746784916255628354}
+  - component: {fileID: 574457503159521909}
   m_Layer: 0
   m_Name: debrisRockv04_26
   m_TagString: Untagged
@@ -1819,6 +2135,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &574457503159521909
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4363559318242915630}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2028654768330507691, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &4369666198796600579
 GameObject:
   m_ObjectHideFlags: 0
@@ -1830,6 +2160,7 @@ GameObject:
   - component: {fileID: 6168470085983442968}
   - component: {fileID: 3538048776978812033}
   - component: {fileID: 7518562974472179445}
+  - component: {fileID: 5299420014398393632}
   m_Layer: 0
   m_Name: debrisRockv04_4
   m_TagString: Untagged
@@ -1898,6 +2229,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &5299420014398393632
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4369666198796600579}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5455280700174041769, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &4391138156118459883
 GameObject:
   m_ObjectHideFlags: 0
@@ -1909,6 +2254,7 @@ GameObject:
   - component: {fileID: 8157271250732118956}
   - component: {fileID: 4111373275167843281}
   - component: {fileID: 7662194494867884952}
+  - component: {fileID: 6189617505751471510}
   m_Layer: 0
   m_Name: debrisRockv04_23
   m_TagString: Untagged
@@ -1977,6 +2323,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &6189617505751471510
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4391138156118459883}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -462892421459413231, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &4430018733723190255
 GameObject:
   m_ObjectHideFlags: 0
@@ -1988,6 +2348,7 @@ GameObject:
   - component: {fileID: 6609227059635993432}
   - component: {fileID: 1533198849492041484}
   - component: {fileID: 244088161833838654}
+  - component: {fileID: 3993521923885136348}
   m_Layer: 0
   m_Name: debrisRockv04_31
   m_TagString: Untagged
@@ -2056,6 +2417,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &3993521923885136348
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4430018733723190255}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6009422138722413596, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &4911938900117349977
 GameObject:
   m_ObjectHideFlags: 0
@@ -2067,6 +2442,7 @@ GameObject:
   - component: {fileID: 8427315348371343092}
   - component: {fileID: 5702608176569252063}
   - component: {fileID: 7814289519587189308}
+  - component: {fileID: 8472013936890784736}
   m_Layer: 0
   m_Name: debrisRockv04_17
   m_TagString: Untagged
@@ -2135,6 +2511,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8472013936890784736
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4911938900117349977}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8343936354740820115, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &5108650892571164287
 GameObject:
   m_ObjectHideFlags: 0
@@ -2146,6 +2536,7 @@ GameObject:
   - component: {fileID: 3648105242998058536}
   - component: {fileID: 6052611311285077117}
   - component: {fileID: 6522729202453278976}
+  - component: {fileID: 8502278006084508688}
   m_Layer: 0
   m_Name: debrisRockv04_35
   m_TagString: Untagged
@@ -2214,6 +2605,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8502278006084508688
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5108650892571164287}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8910555156548017150, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &5157324190543624663
 GameObject:
   m_ObjectHideFlags: 0
@@ -2225,6 +2630,7 @@ GameObject:
   - component: {fileID: 1458690445537482755}
   - component: {fileID: 8768314891747201629}
   - component: {fileID: 2736308246994066672}
+  - component: {fileID: 3764460181877467582}
   m_Layer: 0
   m_Name: debrisRockv04_7
   m_TagString: Untagged
@@ -2293,6 +2699,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &3764460181877467582
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5157324190543624663}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5745317159871553673, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &5267599909902186796
 GameObject:
   m_ObjectHideFlags: 0
@@ -2304,6 +2724,7 @@ GameObject:
   - component: {fileID: 7370095837919654251}
   - component: {fileID: 1373095626991141235}
   - component: {fileID: 590319332087869782}
+  - component: {fileID: 2992031037055291782}
   m_Layer: 0
   m_Name: debrisRockv04_14
   m_TagString: Untagged
@@ -2372,6 +2793,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &2992031037055291782
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5267599909902186796}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4201380616905723770, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &5708568360126267718
 GameObject:
   m_ObjectHideFlags: 0
@@ -2383,6 +2818,7 @@ GameObject:
   - component: {fileID: 7313597413933721155}
   - component: {fileID: 1370033658960041035}
   - component: {fileID: 7276529868654234233}
+  - component: {fileID: 2881727010847726442}
   m_Layer: 0
   m_Name: debrisRockv04_9
   m_TagString: Untagged
@@ -2451,6 +2887,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &2881727010847726442
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5708568360126267718}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6938534655065829265, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &5743390423296459073
 GameObject:
   m_ObjectHideFlags: 0
@@ -2462,6 +2912,7 @@ GameObject:
   - component: {fileID: 569762263722913121}
   - component: {fileID: 8945731665761297724}
   - component: {fileID: 3313104827362529037}
+  - component: {fileID: 1430100737575555368}
   m_Layer: 0
   m_Name: debrisRockv04_21
   m_TagString: Untagged
@@ -2530,6 +2981,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &1430100737575555368
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5743390423296459073}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8108686965082513970, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &5763741959860561900
 GameObject:
   m_ObjectHideFlags: 0
@@ -2541,6 +3006,7 @@ GameObject:
   - component: {fileID: 3115883651063998791}
   - component: {fileID: 8345297793797384419}
   - component: {fileID: 3113449096870674735}
+  - component: {fileID: 313138970750208850}
   m_Layer: 0
   m_Name: debrisRockv04_49
   m_TagString: Untagged
@@ -2609,6 +3075,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &313138970750208850
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5763741959860561900}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7114028162466179577, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &5842223731923383218
 GameObject:
   m_ObjectHideFlags: 0
@@ -2620,6 +3100,7 @@ GameObject:
   - component: {fileID: 1428546105707166906}
   - component: {fileID: 8744251091487473347}
   - component: {fileID: 610361686392894685}
+  - component: {fileID: 390617850239931188}
   m_Layer: 0
   m_Name: debrisRockv04_10
   m_TagString: Untagged
@@ -2688,6 +3169,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &390617850239931188
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5842223731923383218}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4135647166234209205, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &5964547337587312737
 GameObject:
   m_ObjectHideFlags: 0
@@ -2699,6 +3194,7 @@ GameObject:
   - component: {fileID: 8141722428579746482}
   - component: {fileID: 5337190052498123291}
   - component: {fileID: 3420967732911208909}
+  - component: {fileID: 8182952361262728681}
   m_Layer: 0
   m_Name: debrisRockv04_51
   m_TagString: Untagged
@@ -2767,6 +3263,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8182952361262728681
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5964547337587312737}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2528054463867950712, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &6028608768251555290
 GameObject:
   m_ObjectHideFlags: 0
@@ -2778,6 +3288,7 @@ GameObject:
   - component: {fileID: 1500553811266596078}
   - component: {fileID: 7244695950755898494}
   - component: {fileID: 3092076848520244113}
+  - component: {fileID: 1362244103844345309}
   m_Layer: 0
   m_Name: debrisRockv04_22
   m_TagString: Untagged
@@ -2846,6 +3357,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &1362244103844345309
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6028608768251555290}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 623112646804025338, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &6259667905943970687
 GameObject:
   m_ObjectHideFlags: 0
@@ -2857,6 +3382,7 @@ GameObject:
   - component: {fileID: 3321680544813551338}
   - component: {fileID: 1053498453846111024}
   - component: {fileID: 3958476490171606329}
+  - component: {fileID: 6399365453409993351}
   m_Layer: 0
   m_Name: debrisRockv04_2
   m_TagString: Untagged
@@ -2925,6 +3451,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &6399365453409993351
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6259667905943970687}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5532740834086978988, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &6700675201707590566
 GameObject:
   m_ObjectHideFlags: 0
@@ -2936,6 +3476,7 @@ GameObject:
   - component: {fileID: 4183239083556274459}
   - component: {fileID: 409283489499268756}
   - component: {fileID: 2361431781579801477}
+  - component: {fileID: 9081441315918643501}
   m_Layer: 0
   m_Name: debrisRockv04_8
   m_TagString: Untagged
@@ -3004,6 +3545,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &9081441315918643501
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6700675201707590566}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6029050782333526628, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &6860540343651086450
 GameObject:
   m_ObjectHideFlags: 0
@@ -3015,6 +3570,7 @@ GameObject:
   - component: {fileID: 1337309446540562455}
   - component: {fileID: 929978511683871740}
   - component: {fileID: 201562916209275692}
+  - component: {fileID: 7110883801876986158}
   m_Layer: 0
   m_Name: debrisRockv04_32
   m_TagString: Untagged
@@ -3083,6 +3639,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &7110883801876986158
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6860540343651086450}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3632735737007802321, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &6987442210975695859
 GameObject:
   m_ObjectHideFlags: 0
@@ -3094,6 +3664,7 @@ GameObject:
   - component: {fileID: 4398371701997426017}
   - component: {fileID: 7030633858613133295}
   - component: {fileID: 6488241342738303440}
+  - component: {fileID: 8040376417093250720}
   m_Layer: 0
   m_Name: debrisRockv04_44
   m_TagString: Untagged
@@ -3162,6 +3733,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8040376417093250720
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6987442210975695859}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1144418068049699897, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &7354421673154151981
 GameObject:
   m_ObjectHideFlags: 0
@@ -3173,6 +3758,7 @@ GameObject:
   - component: {fileID: 1070247724439323152}
   - component: {fileID: 5460111308544750249}
   - component: {fileID: 3515206925659675134}
+  - component: {fileID: 5710240104346520748}
   m_Layer: 0
   m_Name: debrisRockv04_40
   m_TagString: Untagged
@@ -3241,6 +3827,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &5710240104346520748
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7354421673154151981}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4874093546304720315, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &7599958523492011706
 GameObject:
   m_ObjectHideFlags: 0
@@ -3252,6 +3852,7 @@ GameObject:
   - component: {fileID: 4210345649864240965}
   - component: {fileID: 7254894279972377701}
   - component: {fileID: 4919178895627878156}
+  - component: {fileID: 8124359966509330385}
   m_Layer: 0
   m_Name: debrisRockv04_29
   m_TagString: Untagged
@@ -3320,6 +3921,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8124359966509330385
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7599958523492011706}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2071445364199765666, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &7883375853202175454
 GameObject:
   m_ObjectHideFlags: 0
@@ -3331,6 +3946,7 @@ GameObject:
   - component: {fileID: 955013317459875017}
   - component: {fileID: 5438322097695612065}
   - component: {fileID: 5335144865944469852}
+  - component: {fileID: 1907058294054054423}
   m_Layer: 0
   m_Name: debrisRockv04_25
   m_TagString: Untagged
@@ -3399,6 +4015,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &1907058294054054423
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7883375853202175454}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3452649106527010775, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &8159223825783936353
 GameObject:
   m_ObjectHideFlags: 0
@@ -3410,6 +4040,7 @@ GameObject:
   - component: {fileID: 3617797688637650777}
   - component: {fileID: 5127487056621516692}
   - component: {fileID: 4735169626053257041}
+  - component: {fileID: 3471182080088364414}
   m_Layer: 0
   m_Name: debrisRockv04_46
   m_TagString: Untagged
@@ -3478,6 +4109,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &3471182080088364414
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8159223825783936353}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4442005725467281107, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &8571070934692377937
 GameObject:
   m_ObjectHideFlags: 0
@@ -3489,6 +4134,7 @@ GameObject:
   - component: {fileID: 1428272095865013314}
   - component: {fileID: 289078210270723351}
   - component: {fileID: 5836873107157269175}
+  - component: {fileID: 3914852838246774017}
   m_Layer: 0
   m_Name: debrisRockv04_11
   m_TagString: Untagged
@@ -3557,6 +4203,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &3914852838246774017
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8571070934692377937}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6478549130708968773, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &8623204528803450484
 GameObject:
   m_ObjectHideFlags: 0
@@ -3568,6 +4228,7 @@ GameObject:
   - component: {fileID: 6350830510061113584}
   - component: {fileID: 3296031175168787153}
   - component: {fileID: 9145387712801069051}
+  - component: {fileID: 6049385111984905268}
   m_Layer: 0
   m_Name: debrisRockv04_39
   m_TagString: Untagged
@@ -3636,6 +4297,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &6049385111984905268
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8623204528803450484}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1635644197866752549, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &8629900035651652714
 GameObject:
   m_ObjectHideFlags: 0
@@ -3647,6 +4322,7 @@ GameObject:
   - component: {fileID: 1953180761999529874}
   - component: {fileID: 5072795832947966758}
   - component: {fileID: 5094608970813635772}
+  - component: {fileID: 8817299403374737500}
   m_Layer: 0
   m_Name: debrisRockv04_24
   m_TagString: Untagged
@@ -3715,6 +4391,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8817299403374737500
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8629900035651652714}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3181149439607385523, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &8897370702604897346
 GameObject:
   m_ObjectHideFlags: 0
@@ -3726,6 +4416,7 @@ GameObject:
   - component: {fileID: 44847823989473049}
   - component: {fileID: 6898475122543278440}
   - component: {fileID: 7334437044613879816}
+  - component: {fileID: 4143172390787349042}
   m_Layer: 0
   m_Name: debrisRockv04_19
   m_TagString: Untagged
@@ -3794,6 +4485,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &4143172390787349042
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8897370702604897346}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7869562651693926907, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &8936426182131803377
 GameObject:
   m_ObjectHideFlags: 0
@@ -3805,6 +4510,7 @@ GameObject:
   - component: {fileID: 8412173217832106364}
   - component: {fileID: 3111385138029496469}
   - component: {fileID: 1952858596265102001}
+  - component: {fileID: 6817198871500240472}
   m_Layer: 0
   m_Name: debrisRockv04_5
   m_TagString: Untagged
@@ -3873,6 +4579,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &6817198871500240472
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8936426182131803377}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2035940992483388040, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &9018929380549904110
 GameObject:
   m_ObjectHideFlags: 0
@@ -3884,6 +4604,7 @@ GameObject:
   - component: {fileID: 3951965649797947427}
   - component: {fileID: 920675481815453956}
   - component: {fileID: 8604039933599124700}
+  - component: {fileID: 8653302197302967109}
   m_Layer: 0
   m_Name: debrisRockv04_12
   m_TagString: Untagged
@@ -3952,6 +4673,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8653302197302967109
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9018929380549904110}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2890167888781452105, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &9172648749905250469
 GameObject:
   m_ObjectHideFlags: 0
@@ -3963,6 +4698,7 @@ GameObject:
   - component: {fileID: 3984973430806963918}
   - component: {fileID: 505128867605258365}
   - component: {fileID: 4583581221978800430}
+  - component: {fileID: 1213515181693920161}
   m_Layer: 0
   m_Name: debrisRockv04_20
   m_TagString: Untagged
@@ -4031,6 +4767,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &1213515181693920161
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9172648749905250469}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5428817134010705795, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
 --- !u!1 &9185718878810275738
 GameObject:
   m_ObjectHideFlags: 0
@@ -4042,6 +4792,7 @@ GameObject:
   - component: {fileID: 2364281681041228746}
   - component: {fileID: 4783471737294742839}
   - component: {fileID: 2084424159952963058}
+  - component: {fileID: 2734473015228272433}
   m_Layer: 0
   m_Name: debrisRockv04_1
   m_TagString: Untagged
@@ -4110,3 +4861,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &2734473015228272433
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9185718878810275738}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1951598008023973447, guid: 4fc40d7ca5561e648b078d088945e928, type: 3}
