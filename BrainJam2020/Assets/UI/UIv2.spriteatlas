@@ -31,15 +31,17 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 21a7e32743eeb1f459ce9654cd784fd4, type: 3}
-    totalSpriteSurfaceArea: 677827
+    totalSpriteSurfaceArea: 712489
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: df6dec9192a8c5843bdef2c4ae640798, type: 3}
   - {fileID: 21300000, guid: 519633228e7b78c4faeaa2a3847a447d, type: 3}
   - {fileID: 21300000, guid: 866a6f15be2693e4d96c489fac4bad5c, type: 3}
   - {fileID: 21300000, guid: d6c7fdda835369549975d1f161a61b75, type: 3}
   - {fileID: 21300000, guid: 333fef1ef43732748860bc5fdddb08cd, type: 3}
   m_PackedSpriteNamesToIndex:
+  - Buttons
   - arrow
   - slider
   - knob
