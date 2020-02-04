@@ -568,11 +568,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 493c289b81667ac45ab03b2e2af754f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _planetUITemplate: {fileID: 7784693584940517744, guid: 2cf58288b799cd744a9f10c2ce2fe3b6,
+  _planetUITemplate: {fileID: 3735489998959253053, guid: ca725633996fcb544b8550460bf944e1,
     type: 3}
   godCamera: {fileID: 0}
   _textOffset: 0.77
   _launchButton: {fileID: 5032655431698536575}
+  panelOffset: {x: 0, y: 0.1}
 --- !u!1 &5032655429868665364
 GameObject:
   m_ObjectHideFlags: 0

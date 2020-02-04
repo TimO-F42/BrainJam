@@ -12,6 +12,7 @@ public struct PanelInfo
     public RectTransform _transform;
     public Planet _planet;
     public Slider _planetMass;
+    public TMP_Text _planetMassText;
     public TMP_Text _gravityForceText;
 
     public void Finalise()
@@ -33,6 +34,8 @@ public class SystemInputSetup : MonoBehaviour
     public float _textOffset;
 
     public GameObject _launchButton;
+
+    public Vector2 panelOffset;
     
     // Start is called before the first frame update
     void Start()
@@ -49,6 +52,7 @@ public class SystemInputSetup : MonoBehaviour
             panel._planetMass = GetSlider(ui.transform, "MassVal");
             panel._planetMass.minValue = panel._planet._minMass;
             panel._planetMass.maxValue = panel._planet._maxMass;
+            panel._planetMassText = GetMassText(ui.transform);
             panel._planetMass.wholeNumbers = true;
             panel._gravityForceText = GetGravityForceText(ui.transform);
             _panels.Add(panel);
@@ -64,24 +68,35 @@ public class SystemInputSetup : MonoBehaviour
         {
             UpdatePanelPosition(panel, canvasRect);
             ReadPanelInput(panel);
+            PrintMassText(panel);
         }
         
     }
 
     private void UpdatePanelPosition(PanelInfo panel, RectTransform canvasRect)
     {
-        Vector2 ViewportPosition=godCamera.WorldToViewportPoint(panel._planet.transform.position);
-        Vector2 WorldObject_ScreenPosition=new Vector2(
-            ((ViewportPosition.x*canvasRect.sizeDelta.x)-(canvasRect.sizeDelta.x*_textOffset)),
-            ((ViewportPosition.y*canvasRect.sizeDelta.y)-(canvasRect.sizeDelta.y*_textOffset)));
-        panel._transform.anchoredPosition=WorldObject_ScreenPosition;
+        //Vector2 ViewportPosition=godCamera.WorldToViewportPoint(panel._planet.transform.position);
+        //Vector2 WorldObject_ScreenPosition=new Vector2(
+        //    ((ViewportPosition.x*canvasRect.sizeDelta.x)-(canvasRect.sizeDelta.x*_textOffset)),
+        //    ((ViewportPosition.y*canvasRect.sizeDelta.y)-(canvasRect.sizeDelta.y*_textOffset)));
+        //panel._transform.anchoredPosition=WorldObject_ScreenPosition;
+
+        Vector2 ViewportPosition = godCamera.WorldToViewportPoint(panel._planet.transform.position);
+
+        panel._transform.anchorMax = ViewportPosition + panelOffset;
+        panel._transform.anchorMin = ViewportPosition + panelOffset;
     }
 
     private void ReadPanelInput(PanelInfo panel)
     {
         double gravForce = CalculateStrengthOnSurface(panel);
         
-        panel._gravityForceText.text = $"{(Math.Truncate(100 * gravForce) / 100).ToString()} m/s" ;
+        panel._gravityForceText.text = $"{(Math.Truncate(100 * gravForce) / 100).ToString()}";
+    }
+
+    private void PrintMassText(PanelInfo panel)
+    {
+        panel._planetMassText.text = $"{panel._planetMass.value * PlayerPhysics.mass}"; // <-- I'm guessing! lol!
     }
 
     private float CalculateStrengthOnSurface(PanelInfo panel)
@@ -136,6 +151,18 @@ public class SystemInputSetup : MonoBehaviour
             if (child.GetComponent<TMP_Text>() && child.gameObject.name == "GravValue")
             {
                 return child.GetComponent<TMP_Text>();
+            }
+        }
+        return null;
+    }
+
+    private TMP_Text GetMassText(Transform ui)
+    {
+        foreach (TMP_Text textMeshPro in ui.GetComponentsInChildren<TMP_Text>())
+        {
+            if (textMeshPro.gameObject.name == "MassValText")
+            {
+                return textMeshPro;
             }
         }
         return null;
