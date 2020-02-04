@@ -279,6 +279,8 @@ MonoBehaviour:
   startSlingPos: {fileID: 0}
   slingAnimator: {fileID: 0}
   world: {fileID: 0}
+  slingDir: {fileID: 0}
+  _trail: {fileID: 0}
   X: 0
   Y: 0
   maxAngle: 0
