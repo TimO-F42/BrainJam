@@ -42,4 +42,9 @@ public class PlanetInputPanel : MonoBehaviour
 
         _isOpen = !_isOpen;
     }
+
+    public void OnMouseEnter()
+    {
+        Debug.Log("ENTERED");
+    }
 }
