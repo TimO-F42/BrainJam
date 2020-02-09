@@ -101,10 +101,9 @@ public class Launcher : MonoBehaviour
     {
         FindObjectOfType<Player>().transform.SetParent(world.transform);
         slingAnimator.SetTrigger("Sling");
-        
-        
+
         thrust = _playerVelocity.value;
-        
+
         Rigidbody rb = FindObjectOfType<Player>()._rigidbody;
         rb.isKinematic = false;
         FindObjectOfType<Player>()._launched = true;

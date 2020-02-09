@@ -1,50 +1,73 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(Animator), typeof(Canvas))]
-public class PlanetInputPanel : MonoBehaviour
+public class PlanetInputPanel : MonoBehaviour, IPointerExitHandler
 {
-    private readonly int _openTrigger = Animator.StringToHash("Open");
-    private readonly int _closeTrigger = Animator.StringToHash("Close");
+    private static readonly int _opening = Animator.StringToHash("Opening");
+    private static readonly int _open = Animator.StringToHash("Open");
+    private static readonly int _close = Animator.StringToHash("Close");
 
     private Animator _animator;
     private Canvas _canvas;
-    private bool _isOpen;
     private int _originalSorting;
-    private int _inFrontSorting = 100;
+    
+    private const int InFrontSorting = 100;
 
-    void Awake()
+    private bool IsOpen
+    {
+        get
+        {
+            int currentState = _animator.GetCurrentAnimatorStateInfo(0).shortNameHash;
+            return currentState == _open || currentState == _opening;
+        }
+    }
+    
+    private void Awake()
     {
         _animator = GetComponent<Animator>();
         _canvas = GetComponent<Canvas>();
         _originalSorting = _canvas.sortingOrder;
     }
 
-    public void OnClickButton()
+    public void HoveringArrowButton()
     {
-        int trigger;
-        int sorting;
-
-        if (!_isOpen)
+        if (!IsOpen)
         {
-            trigger = _openTrigger;
-            sorting = _inFrontSorting;
+            _animator.SetTrigger(_open);
+            _canvas.sortingOrder = InFrontSorting;
         }
-        else
-        {
-            trigger = _closeTrigger;
-            sorting = _originalSorting;
-        }
-
-        _animator.SetTrigger(trigger);
-        _canvas.sortingOrder = sorting;
-
-        _isOpen = !_isOpen;
     }
 
-    public void OnMouseEnter()
+    public void OnPointerExit(PointerEventData eventData)
     {
-        Debug.Log("ENTERED");
+        if (Input.GetMouseButton(0))
+        {
+            StartCoroutine(CloseOnRelease());
+        }
+        else if (IsOpen)
+        {
+            Close();
+        }
+    }
+
+    private IEnumerator CloseOnRelease()
+    {
+        while (Input.GetMouseButton(0))
+        {
+            yield return null;
+        }
+
+        if (IsOpen)
+        {
+            Close();
+        }
+    }
+
+    private void Close()
+    {
+        _animator.SetTrigger(_close);
+        _canvas.sortingOrder = _originalSorting;
     }
 }
