@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Dev_Laptop_11\.Rider2019.1\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Dev_Laptop_11\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_BrainJam2020.-1526861092.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Dev_Laptop_11\Desktop\BrainJam\BrainJam\BrainJam2020" t="IncludeRecursive">
+    <e p="C:\Users\Tim\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Tim\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_BrainJam2020.1741371709.00" t="ExcludeRecursive" />
+    <e p="G:\BrainJam\BrainJam2020" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="ForwardDir.cs" t="Include" />
@@ -33,12 +33,14 @@
           <e p="LandOnPlanet.cs" t="Include" />
           <e p="Launcher.cs" t="Include" />
           <e p="Planet.cs" t="Include" />
+          <e p="PlanetInputPanel.cs" t="Include" />
           <e p="PlanetSelector.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="Rotate.cs" t="Include" />
           <e p="Rotate002.cs" t="Include" />
           <e p="SimpleCameraController.cs" t="Include" />
           <e p="SimpleController001.cs" t="Include" />
+          <e p="SineWaveAnimation.cs" t="Include" />
           <e p="SuccessFullLandWrongPlanet.cs" t="Include" />
           <e p="SystemInputSetup.cs" t="Include" />
           <e p="TargetPlanet.cs" t="Include" />
@@ -73,7 +75,9 @@
           </e>
         </e>
         <e p="UI" t="Include">
-          <e p="OFL.txt" t="Include" />
+          <e p="Fonts" t="Include">
+            <e p="OFL.txt" t="Include" />
+          </e>
         </e>
       </e>
       <e p="BrainJam2020.sln" t="IncludeFlat" />

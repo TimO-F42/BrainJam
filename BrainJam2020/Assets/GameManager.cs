@@ -14,10 +14,10 @@ public class GameManager : GenericSingleton<GameManager>
     {
         levels.Add("ArtScene");
         levels.Add("level1");
-        levels.Add("level2");
         levels.Add("level3");
         levels.Add("level4");
         levels.Add("level5");
+        levels.Add("level2");
         SceneManager.LoadScene(levels[_currentLevel], LoadSceneMode.Additive);
     }
 
