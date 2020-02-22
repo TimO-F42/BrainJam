@@ -14,10 +14,14 @@ public struct PanelInfo
     public Slider _planetMass;
     public TMP_Text _planetMassText;
     public TMP_Text _gravityForceText;
+    public float _previousPlanetMass;
 
-    public void Finalise()
+    public void Finalise(int index)
     {
         _planet.SetPlanetMass(_planetMass.value);
+        _previousPlanetMass = _planetMass.value;
+        GameManager.Instance._panelInfoMasses[index] = _planetMass.value;
+        //GameManager.Instance._panelInfoMasses.Add(_planetMass.value);
     }
 }
 
@@ -41,23 +45,56 @@ public class SystemInputSetup : MonoBehaviour
     void Start()
     {
         _planets = FindObjectsOfType<Planet>();
-        for (int i = 0; i < _planets.Length; i++)
+
+        if (GameManager.Instance._panelInfoMasses.Count == 0)
         {
-            if (_planets[i]._isTargetPlanet) continue;
+            for (int i = 0; i < _planets.Length; i++)
+            {
+                if (_planets[i]._isTargetPlanet) continue;
             
-            GameObject ui = Instantiate(_planetUITemplate, Vector3.zero, Quaternion.identity);
-            PanelInfo panel;
-            panel._planet = _planets[i];
-            panel._transform = ui.GetComponent<RectTransform>();
-            panel._planetMass = GetSlider(ui.transform, "MassVal");
-            panel._planetMass.minValue = panel._planet._minMass;
-            panel._planetMass.maxValue = panel._planet._maxMass;
-            panel._planetMassText = GetMassText(ui.transform);
-            panel._planetMass.wholeNumbers = true;
-            panel._gravityForceText = GetGravityForceText(ui.transform);
-            _panels.Add(panel);
-            panel._transform.SetParent(transform, false);
+                GameObject ui = Instantiate(_planetUITemplate, Vector3.zero, Quaternion.identity);
+
+                PanelInfo panel;
+                panel._planet = _planets[i];
+                panel._transform = ui.GetComponent<RectTransform>();
+                panel._planetMass = GetSlider(ui.transform, "MassVal");
+                panel._planetMass.minValue = panel._planet._minMass;
+                panel._planetMass.maxValue = panel._planet._maxMass;
+                panel._planetMassText = GetMassText(ui.transform);
+                panel._planetMass.wholeNumbers = true;
+                panel._gravityForceText = GetGravityForceText(ui.transform);
+                panel._previousPlanetMass = 0;
+                _panels.Add(panel);
+                GameManager.Instance._panelInfoMasses.Add(panel._planetMass.value);
+                panel._transform.SetParent(transform, false);
+            }
         }
+        else
+        {
+            for (int i = 0; i < _planets.Length; i++)
+            {
+                if (_planets[i]._isTargetPlanet) continue;
+                if ((i - 1) < 0) continue;
+                
+                GameObject ui = Instantiate(_planetUITemplate, Vector3.zero, Quaternion.identity);
+                PanelInfo panel;
+                
+                panel._planet = _planets[i];
+                panel._transform = ui.GetComponent<RectTransform>();
+                panel._planetMass = GetSlider(ui.transform, "MassVal");
+                panel._planetMass.minValue = panel._planet._minMass;
+                panel._planetMass.maxValue = panel._planet._maxMass;
+                panel._planetMassText = GetMassText(ui.transform);
+                panel._planetMass.wholeNumbers = true;
+                panel._gravityForceText = GetGravityForceText(ui.transform);
+                panel._previousPlanetMass = GameManager.Instance._panelInfoMasses[i - 1];
+                panel._planetMass.value = GameManager.Instance._panelInfoMasses[i - 1];
+                
+                _panels.Add(panel);
+                panel._transform.SetParent(transform, false);
+            }
+        }
+        
     }
 
     // Update is called once per frame
@@ -112,9 +149,9 @@ public class SystemInputSetup : MonoBehaviour
 
     public void SetFinalPlanetValues()
     {
-        foreach (PanelInfo panel in _panels)
+        for (int i = 0; i < _panels.Count; i++)
         {
-            panel.Finalise();
+            _panels[i].Finalise(i);
         }
     }
 
@@ -131,7 +168,7 @@ public class SystemInputSetup : MonoBehaviour
         return null;
     }
 
-    private Slider GetSlider(Transform ui, string objectName)
+    public Slider GetSlider(Transform ui, string objectName)
     {
         foreach (Transform child in ui.GetComponentsInChildren<Transform>())
         {

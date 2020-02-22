@@ -3,46 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="04030bee-a917-4e5e-9539-4793fe0e56d3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BrainJam2020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BrainJam2020/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_A_001.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_A_001.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_A_001_withClouds_Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_A_001_withClouds_Prefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_A_002.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_A_002.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_B_001_withClouds_Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_B_001_withClouds_Prefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_B_003.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_B_003.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_B_003_withClouds_Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_B_003_withClouds_Prefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_C_001.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_C_001.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_C_001_withClouds_Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_C_001_withClouds_Prefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_C_002.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_C_002.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_C_003.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_C_003.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level5.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/level3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/level3.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/level4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/level4.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GodCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GodCamera.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Launcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Launcher.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Planet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Planet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SystemInputSetup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SystemInputSetup.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>force</find>
-      <find>_launchCamera</find>
-      <find>isKin</find>
-      <find>highl</find>
-      <find>Player</find>
-      <find>ToggleRagdollDisabled</find>
-      <find>radius</find>
-      <find>failTime</find>
-      <find>Idle</find>
-      <find>isTarg</find>
-      <find>_lerpSpeed</find>
-      <find>_normalizedSpeed</find>
-      <find>isKine</find>
-      <find>player</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -83,19 +52,19 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/VelocityInputSetup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GenericSingleton.cs" />
         <option value="$PROJECT_DIR$/Assets/MainMenuHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SystemInputSetup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LandOnPlanet.cs" />
         <option value="$PROJECT_DIR$/Assets/ForwardDir.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TargetPlanet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SuccessFullLandWrongPlanet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Launcher.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Trail.cs" />
-        <option value="$PROJECT_DIR$/Assets/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GodCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Planet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SystemInputSetup.cs" />
+        <option value="$PROJECT_DIR$/Assets/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Launcher.cs" />
       </list>
     </option>
   </component>
@@ -164,7 +133,7 @@
       <workItem from="1580725177922" duration="8783000" />
       <workItem from="1580747113028" duration="2992000" />
       <workItem from="1580837143606" duration="607000" />
-      <workItem from="1582382470847" duration="1873000" />
+      <workItem from="1582382470847" duration="7436000" />
     </task>
     <servers />
   </component>
@@ -174,6 +143,10 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="WindowStateProjectService">
+    <state width="594" height="466" key="DebuggerActiveHint" timestamp="1582389465737">
+      <screen x="2560" y="0" width="1920" height="1042" />
+    </state>
+    <state width="594" height="466" key="DebuggerActiveHint/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582389465737" />
     <state width="1877" height="135" key="GridCell.Tab.0.bottom" timestamp="1582383606087">
       <screen x="2560" y="0" width="1920" height="1042" />
     </state>
@@ -210,6 +183,10 @@
       <screen x="2560" y="0" width="1920" height="1042" />
     </state>
     <state x="3198" y="123" width="644" height="804" key="find.popup/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582384769873" />
+    <state x="3183" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1582385590070">
+      <screen x="2560" y="0" width="1920" height="1042" />
+    </state>
+    <state x="3183" y="227" width="672" height="678" key="search.everywhere.popup/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582385590070" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -218,6 +195,32 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Launcher.cs</url>
+          <line>61</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Launcher.cs" initialLine="61">
+            <startOffsets>
+              <option value="1540" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1541" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Launcher.cs</url>
+          <line>69</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Launcher.cs" initialLine="69">
+            <startOffsets>
+              <option value="1854" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1855" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>

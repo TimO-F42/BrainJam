@@ -9,6 +9,11 @@ public class GameManager : GenericSingleton<GameManager>
     public List<string> levels = new List<string>();
 
     public int _currentLevel = 0;
+
+    public float _playerVelocity;
+    public Vector2 _launcherRotation;
+
+    public List<float> _panelInfoMasses = new List<float>();
     // Start is called before the first frame update
     void Start()
     {
@@ -23,9 +28,18 @@ public class GameManager : GenericSingleton<GameManager>
 
     public void MoveToNextLevel()
     {
+        ResetPreconfigureNumbers();
+        
         SceneManager.UnloadSceneAsync(levels[_currentLevel]);
         _currentLevel++;
         SceneManager.LoadScene(levels[_currentLevel], LoadSceneMode.Additive);
+        
+    }
+
+    private void ResetPreconfigureNumbers()
+    {
+        _panelInfoMasses.Clear();
+        _playerVelocity = 0;
     }
 
     public void RestartLevel()

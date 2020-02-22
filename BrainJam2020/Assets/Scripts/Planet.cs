@@ -42,6 +42,12 @@ public class Planet : BaseObject
         _mass = mass;
         //_rigidbody.mass = mass;
     }
+
+    public float GetPlanetMass()
+    {
+        return _mass;
+    }
+    
     public virtual Vector3 PlanetForce(Vector3 playerPosition)
     {
         Vector3 force = transform.position - playerPosition;

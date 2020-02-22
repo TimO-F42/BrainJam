@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -33,20 +34,44 @@ public class Launcher : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SetupVelocitySlider();
         SpawnPlayer();
         
+    }
+
+    private void SetupVelocitySlider()
+    {
+        Slider[] sliders = FindObjectsOfType<Slider>();
+
+        for (int i = 0; i < sliders.Length; i++)
+        {
+            if (sliders[i].gameObject.name == "VelocitySlider")
+            {
+                _playerVelocity = sliders[i];
+            }
+        }
     }
 
     void SpawnPlayer()
     {
         //player = Instantiate(_playerObject, _launchPosition.position, Quaternion.identity, startSlingPos);
         //player.transform.SetParent(startSlingPos, false);
+        if (GameManager.Instance._playerVelocity != 0) _playerVelocity.value = GameManager.Instance._playerVelocity;
+
+        if (GameManager.Instance._launcherRotation == Vector2.zero)
+        {
+            transform.LookAt(GameObject.Find("TargetPlanet").transform);
+            targetLook = transform.forward;
+            maxAngle = transform.eulerAngles.x + 45.0f;
+            minAngle = transform.eulerAngles.x - 45.0f;
+            currentAngle = transform.eulerAngles.x;
+        }
+        else
+        {
+            X = GameManager.Instance._launcherRotation.x;
+            Y = GameManager.Instance._launcherRotation.y;
+        }
         
-        transform.LookAt(GameObject.Find("TargetPlanet").transform);
-        targetLook = transform.forward;
-        maxAngle = transform.eulerAngles.x + 45.0f;
-        minAngle = transform.eulerAngles.x - 45.0f;
-        currentAngle = transform.eulerAngles.x;
     }
 
     public float X;
@@ -62,28 +87,15 @@ public class Launcher : MonoBehaviour
     public float aimHeightMin = -90;
 
     public float aimHeightMax = 40;
+    
+    
+    
     // Update is called once per frame
     void Update()
     {
-        //if (!_startTrail) _trail.enabled = false;
-        //else _trail.enabled = true;
-        
         if (_game._viewState == Game.ViewState.LAUNCH)
         {
             currentAngle = transform.eulerAngles.x;
-            /*if (currentAngle <= maxAngle && currentAngle >= minAngle)
-            {
-                X = -Input.GetAxis("Vertical") * speed;
-                transform.Rotate(X, Y, 0.0f);
-            }
-            else
-            {
-                X = 0;
-                if (currentAngle > maxAngle) transform.eulerAngles = new Vector3(maxAngle, transform.eulerAngles.y, transform.eulerAngles.z);
-                if (currentAngle < minAngle) transform.eulerAngles = new Vector3(minAngle, transform.eulerAngles.y, transform.eulerAngles.z);
-            }
-            
-            Y = Input.GetAxis("Horizontal") * speed;*/
             
             X += -Input.GetAxis("Vertical") * speed * Time.deltaTime;
             X = Mathf.Clamp(X, aimWidthMin, aimWidthMax);
@@ -103,6 +115,9 @@ public class Launcher : MonoBehaviour
         slingAnimator.SetTrigger("Sling");
 
         thrust = _playerVelocity.value;
+        GameManager.Instance._playerVelocity = _playerVelocity.value;
+        GameManager.Instance._launcherRotation = new Vector2(X,Y); 
+        
 
         Rigidbody rb = FindObjectOfType<Player>()._rigidbody;
         rb.isKinematic = false;
