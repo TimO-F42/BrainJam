@@ -41,6 +41,7 @@ public class Trail : MonoBehaviour
         CurrentTrail = new List<Vector3>();
         trailAttempts = new List<List<Vector3>>();
         myLine = new GameObject();
+        GameManager.Instance._lineAttempts.Add(myLine);
         _game = FindObjectOfType<Game>();
         if (!_squirrel)
             _squirrel = (Player)FindObjectOfType(typeof(Player));

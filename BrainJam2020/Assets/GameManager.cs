@@ -14,6 +14,8 @@ public class GameManager : GenericSingleton<GameManager>
     public Vector2 _launcherRotation;
 
     public List<float> _panelInfoMasses = new List<float>();
+    public List<GameObject> _lineAttempts = new List<GameObject>();
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +42,10 @@ public class GameManager : GenericSingleton<GameManager>
     {
         _panelInfoMasses.Clear();
         _playerVelocity = 0;
+        foreach (GameObject line in _lineAttempts)
+        {
+            Destroy(line);
+        }
     }
 
     public void RestartLevel()
