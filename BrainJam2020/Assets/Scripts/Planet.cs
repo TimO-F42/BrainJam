@@ -40,7 +40,7 @@ public class Planet : BaseObject
     public virtual void SetPlanetMass(float mass)
     {
         _mass = mass;
-        _rigidbody.mass = mass;
+        //_rigidbody.mass = mass;
     }
     public virtual Vector3 PlanetForce(Vector3 playerPosition)
     {

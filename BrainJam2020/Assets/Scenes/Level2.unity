@@ -565,6 +565,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7338002154934632340, guid: 1ca407816421f9d4ea0a54b6e811dad6,
+        type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1164521718}
+    - target: {fileID: 7338002154934632340, guid: 1ca407816421f9d4ea0a54b6e811dad6,
+        type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LevelFailedView
+      objectReference: {fileID: 0}
+    - target: {fileID: 7338002154934632340, guid: 1ca407816421f9d4ea0a54b6e811dad6,
+        type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7338002155153863258, guid: 1ca407816421f9d4ea0a54b6e811dad6,
+        type: 3}
+      propertyPath: m_Mass
+      value: 5000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ca407816421f9d4ea0a54b6e811dad6, type: 3}
 --- !u!4 &572004184 stripped
@@ -1342,6 +1362,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1781975274994105547, guid: c7e2eef55e69f6144a44e2dd55a8d003,
+        type: 3}
+      propertyPath: _playerVelocity
+      value: 
+      objectReference: {fileID: 1391115330}
     - target: {fileID: 2052832953682029590, guid: c7e2eef55e69f6144a44e2dd55a8d003,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1744,6 +1769,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e2eef55e69f6144a44e2dd55a8d003, type: 3}
+--- !u!114 &1164521718 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5208977079128938819, guid: c7e2eef55e69f6144a44e2dd55a8d003,
+    type: 3}
+  m_PrefabInstance: {fileID: 1164521717}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2515b329e8cc0814c879b246b38b82ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1191815075 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4413250660592292444, guid: 7c9d23574d98e9f4492627f44cdd4444,
@@ -2029,6 +2066,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 184326418}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1391115330 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 555863759071660052, guid: c7e2eef55e69f6144a44e2dd55a8d003,
+    type: 3}
+  m_PrefabInstance: {fileID: 1164521717}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1430760553 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2355214218428848454, guid: 1ca407816421f9d4ea0a54b6e811dad6,
@@ -2290,6 +2339,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planet_A_002
       objectReference: {fileID: 0}
+    - target: {fileID: 1272843317588882804, guid: 51f54f673092f384ca18735cb4b2e7e9,
+        type: 3}
+      propertyPath: m_Mass
+      value: 5000
+      objectReference: {fileID: 0}
     - target: {fileID: 3518812793598569943, guid: 51f54f673092f384ca18735cb4b2e7e9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2344,6 +2398,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7250859864203758333, guid: 51f54f673092f384ca18735cb4b2e7e9,
+        type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1164521718}
+    - target: {fileID: 7250859864203758333, guid: 51f54f673092f384ca18735cb4b2e7e9,
+        type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LevelFailedView
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51f54f673092f384ca18735cb4b2e7e9, type: 3}

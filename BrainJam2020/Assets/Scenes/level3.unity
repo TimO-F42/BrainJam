@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -728,6 +728,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7338002154934632340, guid: 1ca407816421f9d4ea0a54b6e811dad6,
+        type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1189451325}
+    - target: {fileID: 7338002154934632340, guid: 1ca407816421f9d4ea0a54b6e811dad6,
+        type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LevelFailedView
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ca407816421f9d4ea0a54b6e811dad6, type: 3}
 --- !u!4 &622885004 stripped
@@ -863,6 +873,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1945307687}
     m_Modifications:
+    - target: {fileID: 122028318, guid: 5efb2be9f3367c54482fca7e67794c40, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1189451325}
     - target: {fileID: 110254322363932218, guid: 5efb2be9f3367c54482fca7e67794c40,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1051,7 +1065,7 @@ PrefabInstance:
     - target: {fileID: 2231528201592118005, guid: ee960829c8e35b249abac12dfe377c24,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2231528201592118005, guid: ee960829c8e35b249abac12dfe377c24,
         type: 3}
@@ -1415,6 +1429,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e2eef55e69f6144a44e2dd55a8d003, type: 3}
+--- !u!114 &1189451325 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5208977079128938819, guid: c7e2eef55e69f6144a44e2dd55a8d003,
+    type: 3}
+  m_PrefabInstance: {fileID: 1189451324}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2515b329e8cc0814c879b246b38b82ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1945307686
 GameObject:
   m_ObjectHideFlags: 0
@@ -1463,6 +1489,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1945307687}
     m_Modifications:
+    - target: {fileID: 1503446924, guid: 3a042671d0d74e2428f6af91ac9343ea, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1189451325}
     - target: {fileID: 904741082333945411, guid: 3a042671d0d74e2428f6af91ac9343ea,
         type: 3}
       propertyPath: m_Name

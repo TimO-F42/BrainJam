@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -435,6 +435,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e2eef55e69f6144a44e2dd55a8d003, type: 3}
+--- !u!114 &112350806 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5208977079128938819, guid: c7e2eef55e69f6144a44e2dd55a8d003,
+    type: 3}
+  m_PrefabInstance: {fileID: 112350805}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2515b329e8cc0814c879b246b38b82ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &133288789
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1641,6 +1653,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1929770069}
     m_Modifications:
+    - target: {fileID: 1572148238, guid: 9340bdf2ee7ef0f42b758533dd059034, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 112350806}
     - target: {fileID: 831552473014167531, guid: 9340bdf2ee7ef0f42b758533dd059034,
         type: 3}
       propertyPath: m_Name
@@ -1901,6 +1917,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1929770069}
     m_Modifications:
+    - target: {fileID: 897858402, guid: b5047161b8c7b2048b0b9e13249416e6, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 112350806}
     - target: {fileID: 1814231393102428974, guid: b5047161b8c7b2048b0b9e13249416e6,
         type: 3}
       propertyPath: m_Name

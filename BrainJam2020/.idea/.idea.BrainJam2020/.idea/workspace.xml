@@ -2,11 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04030bee-a917-4e5e-9539-4793fe0e56d3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BrainJam2020/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BrainJam2020/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BrainJam2020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BrainJam2020/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_A_001.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_A_001.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_A_001_withClouds_Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_A_001_withClouds_Prefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_A_002.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_A_002.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_B_001_withClouds_Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_B_001_withClouds_Prefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_B_003.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_B_003.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_B_003_withClouds_Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_B_003_withClouds_Prefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_C_001.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_C_001.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_C_001_withClouds_Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_C_001_withClouds_Prefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_C_002.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_C_002.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_C_003.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Planets/Planet_C_003.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level5.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/level3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/level3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/level4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/level4.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GodCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GodCamera.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/UIv2.spriteatlas" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/UIv2.spriteatlas" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Planet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Planet.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +88,6 @@
         <option value="$PROJECT_DIR$/Assets/ForwardDir.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TargetPlanet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Planet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SuccessFullLandWrongPlanet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Launcher.cs" />
@@ -83,6 +95,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Trail.cs" />
         <option value="$PROJECT_DIR$/Assets/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GodCamera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Planet.cs" />
       </list>
     </option>
   </component>
@@ -115,10 +128,10 @@
       <option name="pid" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="15868">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="15868" />
       <method v="2" />
     </configuration>
   </component>
@@ -151,7 +164,7 @@
       <workItem from="1580725177922" duration="8783000" />
       <workItem from="1580747113028" duration="2992000" />
       <workItem from="1580837143606" duration="607000" />
-      <workItem from="1582382470847" duration="505000" />
+      <workItem from="1582382470847" duration="1873000" />
     </task>
     <servers />
   </component>
@@ -160,6 +173,44 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="WindowStateProjectService">
+    <state width="1877" height="135" key="GridCell.Tab.0.bottom" timestamp="1582383606087">
+      <screen x="2560" y="0" width="1920" height="1042" />
+    </state>
+    <state width="1877" height="135" key="GridCell.Tab.0.bottom/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582383606087" />
+    <state width="1877" height="135" key="GridCell.Tab.0.center" timestamp="1582383606087">
+      <screen x="2560" y="0" width="1920" height="1042" />
+    </state>
+    <state width="1877" height="135" key="GridCell.Tab.0.center/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582383606087" />
+    <state width="1877" height="135" key="GridCell.Tab.0.left" timestamp="1582383606086">
+      <screen x="2560" y="0" width="1920" height="1042" />
+    </state>
+    <state width="1877" height="135" key="GridCell.Tab.0.left/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582383606086" />
+    <state width="1877" height="135" key="GridCell.Tab.0.right" timestamp="1582383606087">
+      <screen x="2560" y="0" width="1920" height="1042" />
+    </state>
+    <state width="1877" height="135" key="GridCell.Tab.0.right/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582383606087" />
+    <state width="1877" height="135" key="GridCell.Tab.1.bottom" timestamp="1582383618827">
+      <screen x="2560" y="0" width="1920" height="1042" />
+    </state>
+    <state width="1877" height="135" key="GridCell.Tab.1.bottom/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582383618827" />
+    <state width="1877" height="135" key="GridCell.Tab.1.center" timestamp="1582383618827">
+      <screen x="2560" y="0" width="1920" height="1042" />
+    </state>
+    <state width="1877" height="135" key="GridCell.Tab.1.center/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582383618827" />
+    <state width="1877" height="135" key="GridCell.Tab.1.left" timestamp="1582383618827">
+      <screen x="2560" y="0" width="1920" height="1042" />
+    </state>
+    <state width="1877" height="135" key="GridCell.Tab.1.left/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582383618827" />
+    <state width="1877" height="135" key="GridCell.Tab.1.right" timestamp="1582383618827">
+      <screen x="2560" y="0" width="1920" height="1042" />
+    </state>
+    <state width="1877" height="135" key="GridCell.Tab.1.right/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582383618827" />
+    <state x="3198" y="123" width="644" height="804" key="find.popup" timestamp="1582384769873">
+      <screen x="2560" y="0" width="1920" height="1042" />
+    </state>
+    <state x="3198" y="123" width="644" height="804" key="find.popup/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582384769873" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>

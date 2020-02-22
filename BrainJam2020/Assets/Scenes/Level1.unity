@@ -262,6 +262,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4281775458823016874, guid: c7e2eef55e69f6144a44e2dd55a8d003,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5160699999319652140, guid: c7e2eef55e69f6144a44e2dd55a8d003,
         type: 3}
       propertyPath: m_enableAutoSizing
@@ -351,6 +356,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5208977080095343980, guid: c7e2eef55e69f6144a44e2dd55a8d003,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5208977080095343981, guid: c7e2eef55e69f6144a44e2dd55a8d003,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5208977080279025831, guid: c7e2eef55e69f6144a44e2dd55a8d003,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5978551620886912692, guid: c7e2eef55e69f6144a44e2dd55a8d003,
         type: 3}

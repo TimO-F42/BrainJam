@@ -11,7 +11,7 @@ public class GodCamera : MonoBehaviour
     private float rotationX;
     private float rotationY;
 
-    public float mouseScrollSpeed = 10f;
+    public float mouseScrollSpeed = 50f;
 
     
 
