@@ -14,7 +14,7 @@ public class GameManager : GenericSingleton<GameManager>
     public Vector2 _launcherRotation;
 
     public List<float> _panelInfoMasses = new List<float>();
-    public List<GameObject> _lineAttempts = new List<GameObject>();
+    public Queue<GameObject> _lineAttempts = new Queue<GameObject>();
     
     // Start is called before the first frame update
     void Start()

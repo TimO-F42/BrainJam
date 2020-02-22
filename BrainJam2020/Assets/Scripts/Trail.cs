@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Trail : MonoBehaviour
@@ -41,7 +42,15 @@ public class Trail : MonoBehaviour
         CurrentTrail = new List<Vector3>();
         trailAttempts = new List<List<Vector3>>();
         myLine = new GameObject();
-        GameManager.Instance._lineAttempts.Add(myLine);
+        
+        
+        GameManager.Instance._lineAttempts.Enqueue(myLine);
+        if (GameManager.Instance._lineAttempts.Count > 3)
+        {
+            Destroy(GameManager.Instance._lineAttempts.First());
+            GameManager.Instance._lineAttempts.Dequeue();
+        }
+        
         _game = FindObjectOfType<Game>();
         if (!_squirrel)
             _squirrel = (Player)FindObjectOfType(typeof(Player));
