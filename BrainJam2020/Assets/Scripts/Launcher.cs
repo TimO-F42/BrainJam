@@ -34,7 +34,7 @@ public class Launcher : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SetupVelocitySlider();
+        //SetupVelocitySlider();
         SpawnPlayer();
         
     }
@@ -56,7 +56,7 @@ public class Launcher : MonoBehaviour
     {
         //player = Instantiate(_playerObject, _launchPosition.position, Quaternion.identity, startSlingPos);
         //player.transform.SetParent(startSlingPos, false);
-        if (GameManager.Instance._playerVelocity != 0) _playerVelocity.value = GameManager.Instance._playerVelocity;
+        //if (GameManager.Instance._playerVelocity != 0) _playerVelocity.value = GameManager.Instance._playerVelocity;
 
         if (GameManager.Instance._launcherRotation == Vector2.zero)
         {
@@ -114,8 +114,8 @@ public class Launcher : MonoBehaviour
         FindObjectOfType<Player>().transform.SetParent(world.transform);
         slingAnimator.SetTrigger("Sling");
 
-        thrust = _playerVelocity.value;
-        GameManager.Instance._playerVelocity = _playerVelocity.value;
+        thrust = 20.0f;//_playerVelocity.value;
+        //GameManager.Instance._playerVelocity = _playerVelocity.value;
         GameManager.Instance._launcherRotation = new Vector2(X,Y); 
         
 
