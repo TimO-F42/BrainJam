@@ -42,6 +42,10 @@ public class Trail : MonoBehaviour
         trailAttempts = new List<List<Vector3>>();
         myLine = new GameObject();
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        GameManager.Instance._lineAttempts.Add(myLine);
+>>>>>>> parent of 8b81cfa... only last 3 line attemps now show
 =======
         GameManager.Instance._lineAttempts.Add(myLine);
 >>>>>>> parent of 8b81cfa... only last 3 line attemps now show

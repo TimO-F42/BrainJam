@@ -3,11 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="04030bee-a917-4e5e-9539-4793fe0e56d3" name="Default Changelist" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BrainJam2020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BrainJam2020/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CoreLevelSetup/LevelSetup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CoreLevelSetup/LevelSetup.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GodCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GodCamera.cs" afterDir="false" />
 =======
+=======
+>>>>>>> parent of 8b81cfa... only last 3 line attemps now show
       <change beforePath="$PROJECT_DIR$/Assets/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameManager.cs" afterDir="false" />
 >>>>>>> parent of 8b81cfa... only last 3 line attemps now show
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trail.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Trail.cs" afterDir="false" />
@@ -306,6 +309,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Planet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SystemInputSetup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Launcher.cs" />
+<<<<<<< HEAD
+>>>>>>> parent of 8b81cfa... only last 3 line attemps now show
+=======
 >>>>>>> parent of 8b81cfa... only last 3 line attemps now show
         <option value="$PROJECT_DIR$/Assets/Scripts/Trail.cs" />
         <option value="$PROJECT_DIR$/Assets/GameManager.cs" />
@@ -411,6 +417,9 @@
 =======
       <workItem from="1580837143606" duration="607000" />
       <workItem from="1582382470847" duration="8185000" />
+<<<<<<< HEAD
+>>>>>>> parent of 8b81cfa... only last 3 line attemps now show
+=======
 >>>>>>> parent of 8b81cfa... only last 3 line attemps now show
     </task>
     <servers />
@@ -464,6 +473,7 @@
 =======
   <component name="WindowStateProjectService">
     <state width="594" height="466" key="DebuggerActiveHint" timestamp="1582389465737">
+<<<<<<< HEAD
       <screen x="2560" y="0" width="1920" height="1042" />
     </state>
     <state width="594" height="466" key="DebuggerActiveHint/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582389465737" />
@@ -498,6 +508,42 @@
     <state width="1877" height="135" key="GridCell.Tab.1.right" timestamp="1582383618827">
       <screen x="2560" y="0" width="1920" height="1042" />
     </state>
+=======
+      <screen x="2560" y="0" width="1920" height="1042" />
+    </state>
+    <state width="594" height="466" key="DebuggerActiveHint/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582389465737" />
+    <state width="1877" height="135" key="GridCell.Tab.0.bottom" timestamp="1582383606087">
+      <screen x="2560" y="0" width="1920" height="1042" />
+    </state>
+    <state width="1877" height="135" key="GridCell.Tab.0.bottom/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582383606087" />
+    <state width="1877" height="135" key="GridCell.Tab.0.center" timestamp="1582383606087">
+      <screen x="2560" y="0" width="1920" height="1042" />
+    </state>
+    <state width="1877" height="135" key="GridCell.Tab.0.center/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582383606087" />
+    <state width="1877" height="135" key="GridCell.Tab.0.left" timestamp="1582383606086">
+      <screen x="2560" y="0" width="1920" height="1042" />
+    </state>
+    <state width="1877" height="135" key="GridCell.Tab.0.left/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582383606086" />
+    <state width="1877" height="135" key="GridCell.Tab.0.right" timestamp="1582383606087">
+      <screen x="2560" y="0" width="1920" height="1042" />
+    </state>
+    <state width="1877" height="135" key="GridCell.Tab.0.right/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582383606087" />
+    <state width="1877" height="135" key="GridCell.Tab.1.bottom" timestamp="1582383618827">
+      <screen x="2560" y="0" width="1920" height="1042" />
+    </state>
+    <state width="1877" height="135" key="GridCell.Tab.1.bottom/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582383618827" />
+    <state width="1877" height="135" key="GridCell.Tab.1.center" timestamp="1582383618827">
+      <screen x="2560" y="0" width="1920" height="1042" />
+    </state>
+    <state width="1877" height="135" key="GridCell.Tab.1.center/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582383618827" />
+    <state width="1877" height="135" key="GridCell.Tab.1.left" timestamp="1582383618827">
+      <screen x="2560" y="0" width="1920" height="1042" />
+    </state>
+    <state width="1877" height="135" key="GridCell.Tab.1.left/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582383618827" />
+    <state width="1877" height="135" key="GridCell.Tab.1.right" timestamp="1582383618827">
+      <screen x="2560" y="0" width="1920" height="1042" />
+    </state>
+>>>>>>> parent of 8b81cfa... only last 3 line attemps now show
     <state width="1877" height="135" key="GridCell.Tab.1.right/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582383618827" />
     <state x="3198" y="123" width="644" height="804" key="find.popup" timestamp="1582384769873">
       <screen x="2560" y="0" width="1920" height="1042" />
