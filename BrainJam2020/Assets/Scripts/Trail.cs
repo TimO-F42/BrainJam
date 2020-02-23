@@ -41,6 +41,10 @@ public class Trail : MonoBehaviour
         CurrentTrail = new List<Vector3>();
         trailAttempts = new List<List<Vector3>>();
         myLine = new GameObject();
+<<<<<<< HEAD
+=======
+        GameManager.Instance._lineAttempts.Add(myLine);
+>>>>>>> parent of 8b81cfa... only last 3 line attemps now show
         _game = FindObjectOfType<Game>();
         if (!_squirrel)
             _squirrel = (Player)FindObjectOfType(typeof(Player));

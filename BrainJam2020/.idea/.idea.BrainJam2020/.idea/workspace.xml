@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04030bee-a917-4e5e-9539-4793fe0e56d3" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BrainJam2020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BrainJam2020/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CoreLevelSetup/LevelSetup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CoreLevelSetup/LevelSetup.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GodCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GodCamera.cs" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/Assets/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameManager.cs" afterDir="false" />
+>>>>>>> parent of 8b81cfa... only last 3 line attemps now show
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trail.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Trail.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -297,7 +301,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Launcher.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GodCamera.cs" />
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/Assets/Scripts/Planet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SystemInputSetup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Launcher.cs" />
+>>>>>>> parent of 8b81cfa... only last 3 line attemps now show
         <option value="$PROJECT_DIR$/Assets/Scripts/Trail.cs" />
+        <option value="$PROJECT_DIR$/Assets/GameManager.cs" />
       </list>
     </option>
   </component>
@@ -396,6 +407,11 @@
       <workItem from="1580636599981" duration="16615000" />
       <workItem from="1580725177922" duration="8783000" />
       <workItem from="1580747113028" duration="2992000" />
+<<<<<<< HEAD
+=======
+      <workItem from="1580837143606" duration="607000" />
+      <workItem from="1582382470847" duration="8185000" />
+>>>>>>> parent of 8b81cfa... only last 3 line attemps now show
     </task>
     <servers />
   </component>
@@ -444,6 +460,55 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+<<<<<<< HEAD
+=======
+  <component name="WindowStateProjectService">
+    <state width="594" height="466" key="DebuggerActiveHint" timestamp="1582389465737">
+      <screen x="2560" y="0" width="1920" height="1042" />
+    </state>
+    <state width="594" height="466" key="DebuggerActiveHint/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582389465737" />
+    <state width="1877" height="135" key="GridCell.Tab.0.bottom" timestamp="1582383606087">
+      <screen x="2560" y="0" width="1920" height="1042" />
+    </state>
+    <state width="1877" height="135" key="GridCell.Tab.0.bottom/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582383606087" />
+    <state width="1877" height="135" key="GridCell.Tab.0.center" timestamp="1582383606087">
+      <screen x="2560" y="0" width="1920" height="1042" />
+    </state>
+    <state width="1877" height="135" key="GridCell.Tab.0.center/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582383606087" />
+    <state width="1877" height="135" key="GridCell.Tab.0.left" timestamp="1582383606086">
+      <screen x="2560" y="0" width="1920" height="1042" />
+    </state>
+    <state width="1877" height="135" key="GridCell.Tab.0.left/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582383606086" />
+    <state width="1877" height="135" key="GridCell.Tab.0.right" timestamp="1582383606087">
+      <screen x="2560" y="0" width="1920" height="1042" />
+    </state>
+    <state width="1877" height="135" key="GridCell.Tab.0.right/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582383606087" />
+    <state width="1877" height="135" key="GridCell.Tab.1.bottom" timestamp="1582383618827">
+      <screen x="2560" y="0" width="1920" height="1042" />
+    </state>
+    <state width="1877" height="135" key="GridCell.Tab.1.bottom/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582383618827" />
+    <state width="1877" height="135" key="GridCell.Tab.1.center" timestamp="1582383618827">
+      <screen x="2560" y="0" width="1920" height="1042" />
+    </state>
+    <state width="1877" height="135" key="GridCell.Tab.1.center/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582383618827" />
+    <state width="1877" height="135" key="GridCell.Tab.1.left" timestamp="1582383618827">
+      <screen x="2560" y="0" width="1920" height="1042" />
+    </state>
+    <state width="1877" height="135" key="GridCell.Tab.1.left/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582383618827" />
+    <state width="1877" height="135" key="GridCell.Tab.1.right" timestamp="1582383618827">
+      <screen x="2560" y="0" width="1920" height="1042" />
+    </state>
+    <state width="1877" height="135" key="GridCell.Tab.1.right/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582383618827" />
+    <state x="3198" y="123" width="644" height="804" key="find.popup" timestamp="1582384769873">
+      <screen x="2560" y="0" width="1920" height="1042" />
+    </state>
+    <state x="3198" y="123" width="644" height="804" key="find.popup/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582384769873" />
+    <state x="3183" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1582385590070">
+      <screen x="2560" y="0" width="1920" height="1042" />
+    </state>
+    <state x="3183" y="227" width="672" height="678" key="search.everywhere.popup/2560.0.1920.1042/0.0.2048.1122@2560.0.1920.1042" timestamp="1582385590070" />
+  </component>
+>>>>>>> parent of 8b81cfa... only last 3 line attemps now show
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>

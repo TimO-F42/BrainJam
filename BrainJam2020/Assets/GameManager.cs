@@ -9,6 +9,16 @@ public class GameManager : GenericSingleton<GameManager>
     public List<string> levels = new List<string>();
 
     public int _currentLevel = 0;
+<<<<<<< HEAD
+=======
+
+    public float _playerVelocity;
+    public Vector2 _launcherRotation;
+
+    public List<float> _panelInfoMasses = new List<float>();
+    public List<GameObject> _lineAttempts = new List<GameObject>();
+    
+>>>>>>> parent of 8b81cfa... only last 3 line attemps now show
     // Start is called before the first frame update
     void Start()
     {
